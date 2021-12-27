@@ -1,0 +1,23 @@
+{
+    "title":"Product #3",
+    "price":55,
+    "discount_price":42,
+    "category":1,
+    "brand":1,
+    "description":"Some Desc Product #3",
+    "versions" : [
+        {
+            "color" : 2,
+            "size" : 2, 
+            "quantity" : 13,
+            "version_description": " ",
+            "is_main" : true
+        },
+        {
+            "color" : 3,
+            "size" : 1, 
+            "quantity" : 3,
+            "version_description": " "
+        }
+    ]
+}

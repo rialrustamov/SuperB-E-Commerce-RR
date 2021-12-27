@@ -1,0 +1,49 @@
+(1) Daxil edilmiş məlumata uyğun məhsulları axtarış edən qs yaradın:
+
+>>> from product.models import Product
+>>> from django.db.models import Q
+>>> qs = Product.objects.all()
+>>> prod = qs.filter(Q(title__icontains='B') | Q(title__icontains='C'))
+_________________________________________________________________________________________________________________
+
+(2) Daxil edilmiş məhsulun (product) review-larını qaytaran qs yazın:
+
+>>> from product.models import *
+>>> p = Product.objects.filter(title='AAA')
+>>> p[0].review.all()
+>>> for i in p[0].review.all():
+...     print(i)
+_________________________________________________________________________________________________________________
+
+(3) Daxil edilmiş məhsulla oxşar olan son dörd məhsulu qaytaran qs yazın (eyni kateqoriya və ya brendə aid olan):
+
+>>> from product.models import *
+>>> pro = Product.objects.filter(title='AAA').all()[0]
+>>> pro.brand
+>>> qs = Product.objects.all()
+>>> for product in qs:
+...     if product.brand == pro.brand:
+...             print(product)
+_________________________________________________________________________________________________________________
+
+(4) Məhsulların kateqoriyalarını qaytaran qs yazın (queryset nəticəsi kimi qayıdan kateqoriyaların hər birinə ən az bir product aid olmalıdır):
+
+>>> prod = list(Product.objects.all())
+>>> for prods in ls_prod:
+...     print(prods.category)
+_________________________________________________________________________________________________________________
+
+(5) Daxil edilmiş kateqoriyaya aid məhsulları qaytaran qs yazın:
+
+>>> from product.models import *
+>>> cats = Category.objects.filter(title='Men')
+>>> prods = cats[0].category.all()
+>>> list(prods)
+_________________________________________________________________________________________________________________
+
+(6) Ən son on məhsulu qaytaran qs yazın:
+
+>>> from product.models import *
+>>> 
+>>> last_prods = Product.objects.order_by('-id')[:10]
+>>> last_prods

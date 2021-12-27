@@ -1,0 +1,39 @@
+﻿{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{{title}}{% endblock %}
+
+{% block base %}
+  
+<div class="inner-page">
+
+<!-- Home Slider Block -->
+
+<section class="main-container col1-layout">
+  <div class="main container">
+    <div class="col-main">
+      <div class="cart wow bounceInUp animated">
+        <div class="page-title">
+          <h2>Frequently Asked Questions</h2>
+        </div>
+
+        <div class="panel-group accordion-faq" id="faq-accordion">
+          {% for faq in faqs %}
+          <div class="panel">
+            <div class="panel-heading"><a data-toggle="collapse" data-parent="#faq-accordion" href="#question{{faq.id}}"> <span class="arrow-down">+</span> <span class="arrow-up">&#8211;</span> {{faq.question}} </a> </div>
+            <div id="question{{faq.id}}" class="panel-collapse collapse in">
+              <div class="panel-body"> {{faq.answer}} </div>
+            </div>
+          </div>
+          {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+</body>
+</html>
+
+{% endblock %}

@@ -1,0 +1,51 @@
+1) Ən populyar (ən çox comment yazılan) dörd blog postu qaytaran queryset (qs) yazın
+
+>>> from django.db.models import Count
+>>> from blog.models import *
+>>> most_com = Blog.objects.annotate(num_coms=Count('blogs')).order_by('-num_coms')[:4]
+>>> most_com
+_________________________________________________________________________________________________________________
+2) Son dörd blog postu qaytaran qs yazın
+
+>>> from blog.models import *
+>>> last4 = Blog.objects.order_by('-id')[:4]
+>>> last4
+_________________________________________________________________________________________________________________
+3) Blog post kateqoriyalarını qaytaran qs yazın
+
+>>> bloglist = list(Blog.objects.all())
+>>> for eachblog in bloglist:
+...     print(eachblog.category)
+_________________________________________________________________________________________________________________
+4) Daxil edilmiş məlumata uyğun blog postları axtarış edən qs yaradın
+
+>>> from blog.models import Blog
+>>> from django.db.models import Q
+>>> qs = Blog.objects.all()
+>>> anyblog = qs.filter(Q(title__icontains='n') | Q(title__icontains='h'))
+>>> anyblog
+_________________________________________________________________________________________________________________
+5) Daxil edilmiş blog postun commentlerini qaytaran qs yazın
+
+>>> from blog.models import *
+>>> qs = Comment.objects.filter(blog__title="Blog 1 Title")
+>>> qs
+_________________________________________________________________________________________________________________
+6) Məhsulun (product) qiymət və əlavə olunma tarixinə görə sort edən qs yazın
+
+>>> from product.models import *
+>>> time = Product.objects.order_by('-created_at')
+>>> time
+
+>>> price = Product.objects.order_by('price')
+>>> price
+
+>>> price = Product.objects.filter(price=78.00)
+>>> price
+_________________________________________________________________________________________________________________
+7) Ən populyar beş məhsul (product) taglərini qaytaran qs yazın
+
+>>> from django.db.models import Count
+>>> from product.models import *
+>>> most_tag = Tag.objects.annotate(num_tags=Count('product_tags')).order_by('-num_tags')[:5]
+>>> most_tag

@@ -1,0 +1,93 @@
+﻿{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Register{% endblock %}
+
+{% block base %}
+
+<div id="page">
+
+
+
+  <!-- Main Container -->
+  <section class="main-container col1-layout bounceInUp animated">
+    <div class="main container">
+      <div class="account-login">
+        <div class="page-title">
+          <h1>Login or Create an Account</h1>
+        </div>
+        <fieldset class="col2-set">
+          <legend>Login or Create an Account</legend>
+          <div class="col-1 new-users"><strong>Registered Customers</strong>
+            <div class="content">
+              <p>By creating an account with our store, you will be able to move through the checkout process faster,
+                store multiple shipping addresses, view and track your orders in your account and more.</p>
+              <div class="buttons-set">
+                <a href="{%  url 'login' %}">
+                  <button class="button create-account"><span>Login</span></button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-2 registered-users"><strong>New Customers</strong>
+            {% if form.errors %}
+            <div class="alert alert-danger">
+              {{ form.errors }}
+            </div>
+            {% endif %}
+            <form method="post" name="register">
+              {% csrf_token %}
+              <div class="content">
+                <p>If you have an account with us, please log in.</p>
+                <ul class="form-list">
+                  <li>
+                    <label for="name">First Name<span class="required">*</span></label>
+                    <br>
+                    {{form.first_name}}
+                  </li>
+                  <li>
+                    <label for="surname">Last Name<span class="required">*</span></label>
+                    <br>
+                    {{form.last_name}}
+                  </li>
+                  <li>
+                    <label for="email">Email Address <span class="required">*</span></label>
+                    <br>
+                    {{form.email}}
+                  </li>
+                  <li>
+                    <label for="pass">Password <span class="required">*</span></label>
+                    <br>
+                    {{form.password}}
+                  </li>
+                  <li>
+                    <label for="pass2">Confirm password <span class="required">*</span></label>
+                    <br>
+                    {{form.password_confirmation}}
+                  </li>
+                </ul>
+                <p class="required">* Required Fields</p>
+                <div class="buttons-set">
+                  <button id="send2" name="register" type="submit" class="button login"><span>Register</span></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </fieldset>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+  </section>
+  <!-- Main Container End -->
+
+
+</div>
+</body>
+
+</html>
+
+{% endblock %}

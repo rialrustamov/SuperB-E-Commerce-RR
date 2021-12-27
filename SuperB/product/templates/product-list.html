@@ -1,0 +1,351 @@
+﻿{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{{title}}{% endblock %}
+{% block base %}
+
+<div id="page">
+
+  <!-- Breadcrumbs -->
+
+  <!-- Breadcrumbs End -->
+  <!-- Main Container -->
+
+  <section class="main-container col2-left-layout bounceInUp animated">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-main col-sm-9 col-sm-push-3">
+          <div class="category-image"><img title="Sofas " alt="Sofas " src="{% static 'images/istockphoto-1204099658-612x612.jpeg' %}">
+          </div>
+          <article class="col-main">
+            <div class="page-title">
+              <h1>Tops & Tees</h1>
+            </div>
+
+            <div class="toolbar">
+              <div class="sorter">
+                <div class="view-mode"> 
+                  <span title="List" class="button button-active button-list">&nbsp;</span>&nbsp;
+                </div>
+              </div>
+              <div class="pager">
+                <div class="pages">
+                  <label>Page:</label>
+                  <ul class="pagination">
+                    {% if page_obj.has_previous %}
+                    <li><a href="?page={{ page_obj.previous_page_number }}">&laquo;</a></li>
+                    {% endif %}
+                    {% for page in page_obj.paginator.page_range %}
+                    <li {% if page == page_obj.number %} class="active" {% endif %}><a href="?page={{ page }}">{{ page }}</a></li>
+                    {% endfor %}
+                    <!-- <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li> -->
+                    {% if page_obj.has_next %}
+                    <li><a href="?page={{ page_obj.next_page_number }}">&raquo;</a></li>
+                    {% endif %}
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="category-products">
+              {% for product in products %}
+              {% if product.is_main %}
+              <ol class="products-list" id="products-list">
+                <li class="item
+                {% if forloop.first %}
+                first
+                {% elif forloop.last %}
+                {% if forloop.counter|divisibleby:'2' %}
+                last even
+                {% else %}
+                last odd
+                {% endif %}
+                {% elif forloop.counter|divisibleby:'2' %}
+                even 
+                {% else %}
+                odd
+                {% endif %}">
+                  <div class="product-image"><a href="{% url 'product_detail' product.id %}" title={{product.title}}>
+                      <img class="small-image" src='{% if product.main_photo %}
+                        {{product.main_photo.image.url}}{% endif %}' alt={{product.title}}>
+                    </a> </div>
+                  <div class="product-shop">
+                    <h2 class="product-name"><a href="{% url 'product_detail' product.id %}"
+                        title="{{product.product.title}}">{{product.product.title}}</a>
+                    </h2>
+                    <div class="desc std">
+                      <p>{{product.description|truncatewords:25}} <a class="link-learn" title=""
+                          href="{% url 'product_detail' product.id %}">Learn More</a>
+                      </p>
+                    </div>
+                    <div class="price-box">
+
+                      <p class="special-price"> <span class="price-label"></span> <span class="price">
+                          ${{product.product.discount_price}} </span>
+                      </p>
+                      <p class="old-price"> <span class="price-label"></span> <span class="price"> ${{product.product.price}}
+                        </span> </p>
+                    </div>
+                    <!-- Add to basket Field -->
+                    <div class="actions">
+                      <button id="add_basket" data="{{product.id}}" class="button btn-cart ajx-cart" title="Add to Cart"
+                        ><span>Add to Cart</span></button>
+                      <span class="add-to-links pro-add-wishlist" style="cursor: pointer;" data="{{product.id}}"> <a title="Add to Wishlist" class="button link-wishlist"
+                        ><span>Add to Wishlist</span></a> </span>
+                    </div>
+                    <!--  -->
+                  </div>
+                </li>
+              </ol>
+              {% endif %}
+              {% endfor %}
+            </div>
+          </article>
+          <!--	///*///======    End article  ========= //*/// -->
+        </div>
+        <div class="col-left sidebar col-sm-3 col-xs-12 col-sm-pull-9">
+          <aside class="col-left sidebar">
+            <div class="side-nav-categories">
+              <div class="block-title"> Categories </div>
+              <!--block-title-->
+              <!-- BEGIN BOX-CATEGORY -->
+              <div class="box-content box-category">
+                {% for category in categories.all %}
+                <ul>
+                  {% if not category.parent %}
+                  {% if category.children %}
+                  <li>
+                    <form action="" method="get">
+
+                      <button name="category_title" class="active" style="background-color: transparent;"
+                        value="{{category.title}}" type="submit">{{category.title}}</button>
+                      <span class="subDropdown minus"></span>
+                      {% endif %}
+                      {% for parent in category.children.all %}
+                      <ul class="level0_415" style="display:block">
+                        {% if not category.parent.parent %}
+                        <li>
+                          <a href="#"><button style="background-color: transparent;" value="{{parent.title}}"
+                              name="parent_title" type="submit">{{parent.title}}</button></a>
+                          <span class="subDropdown plus"></span>
+                          {% endif %}
+                          {% for subsub in parent.children.all %}
+                          <ul class="level1" style="display:none">
+                            <li> <a href="#"><button style="background-color: transparent;" value="{{parent.title}}"
+                                  name="parent_title" type="submit">{{subsub.title}}</button></a> </li>
+                          </ul>
+                          {% endfor %}
+                        </li>
+                      </ul>
+                      {% endfor %}
+                      {% endif %}
+                    </form>
+                  </li>
+                </ul>
+                {% endfor %}
+              </div>
+              <!--box-content box-category-->
+            </div>
+            <div class="block block-layered-nav">
+              <div class="block-title">Shop By</div>
+              <div class="block-content">
+                <p class="block-subtitle">Shopping Options</p>
+                <dl id="narrow-by-list">
+                  <dt class="odd">Price</dt>
+                  <dd class="odd">
+                    <ol>
+                      <li>
+                        <a href="?max_price=200">
+                          <button name="max_price" style="background-color: transparent;">
+                            <span class="price">$0.00</span> - <span class="price">$199.99</span>
+                          </button>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="?min_price=200">
+                          <button name="min_price" style="background-color: transparent;">
+                            <span class="price">$200.00</span> and above
+                          </button>
+                        </a>
+                      </li>
+                    </ol>
+                  </dd>
+                  <!-- <dt class="even">Manufacturer</dt>
+                  <dd class="even">
+                    <ol>
+                      <li> <a href="#">Superb</a> (9) </li>
+                      <li> <a href="#">Nexus</a> (4) </li>
+                      <li> <a href="#">Xperia</a> (1) </li>
+                    </ol>
+                  </dd> -->
+                  <dt class="odd">Color</dt>
+                  {% for color in colors %}
+                  <dd class="odd">
+                    <ol>
+                      <li>
+                        <a href="?color={{color.title}}">
+                          <button value="{{color.title}}" type="submit" name="color" style="background-color: transparent;">
+                          {{color.title}}
+                          </button>
+                        </a>
+                      </li>
+                      <!-- <li> <a href="#">Black</a> (5) </li>
+                      <li> <a href="#">Gray</a> (4) </li>
+                      <li> <a href="#">Dark Gray</a> (3) </li>
+                      <li> <a href="#">Blue</a> (1) </li>
+                    </ol> -->
+                  </dd>
+                  {% endfor %}
+                  <dt class="last even">Size</dt>
+                  {% for size in sizes %}
+                  <dd class="last even">
+                    <ol>
+                      <li> <a href="?size={{size.title}}">
+                        <button value="{{size.title}}" type="submit" name="color" style="background-color: transparent;">
+                          {{size.title}}
+                          </button>
+                      </a></li>
+                    </ol>
+                  </dd>
+                  {% endfor %}
+                </dl>
+              </div>
+            </div>
+            <div class="block block-cart">
+              <div class="block-title ">My Cart</div>
+              <div class="block-content">
+                <div class="summary">
+                  <p class="amount">There are <a href="{% url 'shopping_cart' %}"><span id="total_product_side">0</span> items</a> in your cart.</p>
+                  <p class="subtotal"> <span class="label">Cart Subtotal:</span> <span class="price" id="total-price"></span> </p>
+                </div>
+                <div class="ajax-checkout">
+                  <button class="button button-checkout" title="Submit" type="submit"><span>Checkout</span></button>
+                </div>
+                <p class="block-subtitle">Recently added item(s) </p>
+                <ul id="cart-sidebar-left">
+                  
+                  
+                </ul>
+              </div>
+            </div>
+            <!-- <div class="block block-compare">
+              <div class="block-title ">Compare Products (2)</div>
+              <div class="block-content">
+                <ol id="compare-items">
+                  <li class="item odd">
+                    <input type="hidden" value="2173" class="compare-item-id">
+                    <a class="btn-remove1" title="Remove This Item" href="#"></a> <a href="#" class="product-name">
+                      Office Colored Ladies Shirt</a>
+                  </li>
+                  <li class="item last even">
+                    <input type="hidden" value="2174" class="compare-item-id">
+                    <a class="btn-remove1" title="Remove This Item" href="#"></a> <a href="#" class="product-name">
+                      Office Colored Ladies Shirt</a>
+                  </li>
+                </ol>
+                <div class="ajax-checkout">
+                  <button type="submit" title="Submit" class="button button-compare"><span>Compare</span></button>
+                  <button type="submit" title="Submit" class="button button-clear"><span>Clear</span></button>
+                </div>
+              </div>
+            </div> -->
+            <!-- <div class="block block-list block-viewed">
+              <div class="block-title"> Recently Viewed </div>
+              <div class="block-content">
+                <ol id="recently-viewed-items">
+                  <li class="item odd">
+                    <p class="product-name"><a href="#"> Retis lapen casen</a></p>
+                  </li>
+                  <li class="item even">
+                    <p class="product-name"><a href="#"> Retis lapen casen</a></p>
+                  </li>
+                  <li class="item last odd">
+                    <p class="product-name"><a href="#"> Retis lapen casen</a></p>
+                  </li>
+                </ol>
+              </div>
+            </div> -->
+            <!-- <div class="block block-poll">
+              <div class="block-title">Community Poll </div>
+              <form id="pollForm" action="#" method="post" onSubmit="return validatePollAnswerIsSelected();">
+                <div class="block-content">
+                  <p class="block-subtitle">What is your favorite Magento feature?</p>
+                  <ul id="poll-answers">
+                    <li class="odd">
+                      <input type="radio" name="vote" class="radio poll_vote" id="vote_5" value="5">
+                      <span class="label">
+                        <label for="vote_5">Layered Navigation</label>
+                      </span>
+                    </li>
+                    <li class="even">
+                      <input type="radio" name="vote" class="radio poll_vote" id="vote_6" value="6">
+                      <span class="label">
+                        <label for="vote_6">Price Rules</label>
+                      </span>
+                    </li>
+                    <li class="odd">
+                      <input type="radio" name="vote" class="radio poll_vote" id="vote_7" value="7">
+                      <span class="label">
+                        <label for="vote_7">Category Management</label>
+                      </span>
+                    </li>
+                    <li class="last even">
+                      <input type="radio" name="vote" class="radio poll_vote" id="vote_8" value="8">
+                      <span class="label">
+                        <label for="vote_8">Compare Products</label>
+                      </span>
+                    </li>
+                  </ul>
+                  <div class="actions">
+                    <button type="submit" title="Vote" class="button button-vote"><span>Vote</span></button>
+                  </div>
+                </div>
+              </form>
+            </div> -->
+            <div class="block block-tags">
+              <div class="block-title"> Popular Tags</div>
+              <div class="block-content">
+                {% for tag in most_popular %}
+                <ul class="tags-list">
+                  <li>
+                    <a href="#" style="font-size:145%;">{{tag}}</a>
+                  </li>
+                  <!-- <li><a href="#" style="font-size:86.6666666667%;">Hohoho</a></li>
+                  <li><a href="#" style="font-size:145%;">SEXY</a></li>
+                  <li><a href="#" style="font-size:75%;">Tag</a></li>
+                  <li><a href="#" style="font-size:110%;">Test</a></li>
+                  <li><a href="#" style="font-size:86.6666666667%;">bones</a></li>
+                  <li><a href="#" style="font-size:110%;">cool</a></li>
+                  <li><a href="#" style="font-size:86.6666666667%;">cool t-shirt</a></li>
+                  <li><a href="#" style="font-size:86.6666666667%;">crap</a></li>
+                  <li><a href="#" style="font-size:86.6666666667%;">good</a></li>
+                  <li><a href="#" style="font-size:86.6666666667%;">green</a></li>
+                  <li><a href="#" style="font-size:86.6666666667%;">hip</a></li>
+                  <li><a href="#" style="font-size:75%;">laptop</a></li>
+                  <li><a href="#" style="font-size:75%;">mobile</a></li>
+                  <li><a href="#" style="font-size:75%;">nice</a></li>
+                  <li><a href="#" style="font-size:86.6666666667%;">phone</a></li>
+                  <li><a href="#" style="font-size:98.3333333333%;">red</a></li>
+                  <li><a href="#" style="font-size:86.6666666667%;">tight</a></li>
+                  <li><a href="#" style="font-size:75%;">trendy</a></li>
+                  <li><a href="#" style="font-size:86.6666666667%;">young</a></li> -->
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Main Container End -->
+
+
+  </body>
+
+  </html>
+
+  {% endblock %}

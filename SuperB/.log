@@ -1,0 +1,2 @@
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/SuperB/middleware.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector

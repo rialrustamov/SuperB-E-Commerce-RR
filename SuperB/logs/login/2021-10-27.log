@@ -1,0 +1,658 @@
+ERROR:SuperB.middleware:Unhandled Exception: User has no user_cart.
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/SuperB/middleware.py", line 58, in process_exception
+    raise exception
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/views.py", line 259, in get
+    serializer = self.serializer_class(request.user.user_cart)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/db/models/fields/related_descriptors.py", line 421, in __get__
+    raise self.RelatedObjectDoesNotExist(
+user.models.User.user_cart.RelatedObjectDoesNotExist: User has no user_cart.
+ERROR:django.request:Internal Server Error: /api/card/
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_response(request, response)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/middleware/clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'RelatedObjectDoesNotExist' object has no attribute 'get'
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/card/', 'request_body': {}, 'run_time': 0.054398298263549805}
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/views.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/views.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/views.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/views.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/SuperB/settings.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.13042235374450684}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.0467531681060791}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"1"}', 'response_body': {'detail': 'Given token not valid for any token type', 'code': 'token_not_valid', 'messages': [{'token_class': 'AccessToken', 'token_type': 'access', 'message': 'Token is invalid or expired'}]}, 'run_time': 0.027238845825195312}
+WARNING:django.request:Unauthorized: /api/card/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/logout/', 'run_time': 0.12159514427185059}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/token/', 'request_body': {}, 'run_time': 0.033652544021606445}
+WARNING:django.request:Method Not Allowed: /api/token/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/token/', 'request_body': b'------WebKitFormBoundaryg10qP25wBxtXUAhF\r\nContent-Disposition: form-data; name="csrfmiddlewaretoken"\r\n\r\naDUFEvBMz46GBgCs0N0sHU3LGa5dNHtTfs7gX7koEeVMdABPS65uKMhZvJQGLbgd\r\n------WebKitFormBoundaryg10qP25wBxtXUAhF\r\nContent-Disposition: form-data; name="email"\r\n\r\nrial@mail.ru\r\n------WebKitFormBoundaryg10qP25wBxtXUAhF\r\nContent-Disposition: form-data; name="password"\r\n\r\n123456\r\n------WebKitFormBoundaryg10qP25wBxtXUAhF--\r\n', 'run_time': 0.24204015731811523}
+ERROR:django.request:Internal Server Error: /user/logout/
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 309, in check_response
+    raise ValueError(
+ValueError: The view user.views.logout_user didn't return an HttpResponse object. It returned None instead.
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/logout/', 'run_time': 0.04199051856994629}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/login/', 'run_time': 0.02620530128479004}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/token/', 'request_body': b'{"email":"rial@mail.ru","password":"123456"}', 'response_body': {'refresh': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTYzNTM5Nzk3NSwiaWF0IjoxNjM1MzExNTc1LCJqdGkiOiI0YmQ5ZTI0NTdkMTk0MDQyYjA4ZWZkNDU2MGM4NDRkOSIsInVzZXJfaWQiOjJ9.3OYT_wUB9IjaKGginnvlgT-nU5fmL72nMNL-_BRHnhQ', 'access': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjM1MzExODc1LCJpYXQiOjE2MzUzMTE1NzUsImp0aSI6ImExNWY0ZTM0YzI0YzRkN2VhZDI3MmZiODY4YWUwY2UyIiwidXNlcl9pZCI6Mn0.W4GXcEJKE0H-kODhGAIg4oR__wi34D0y1TRc9rEF2ZI'}, 'run_time': 0.3466331958770752}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/user/login/', 'run_time': 0.35610008239746094}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/register/', 'run_time': 0.044095516204833984}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.05695748329162598}
+ERROR:SuperB.middleware:Unhandled Exception: name 'Shopping_card' is not defined
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/SuperB/middleware.py", line 58, in process_exception
+    raise exception
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/views.py", line 267, in post
+    basket = Shopping_card.objects.get_or_create(user=request.user)
+NameError: name 'Shopping_card' is not defined
+ERROR:django.request:Internal Server Error: /api/card/
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_response(request, response)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/middleware/clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'NameError' object has no attribute 'get'
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"1"}', 'run_time': 0.06419706344604492}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/', 'run_time': 0.025664806365966797}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/login/?next=/admin/', 'run_time': 0.03677058219909668}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/admin/login/?next=/admin/', 'run_time': 0.17600154876708984}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/admin/login/?next=/admin/', 'run_time': 0.20360517501831055}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/', 'run_time': 0.036063432693481445}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/logout/', 'run_time': 0.024423599243164062}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/login/', 'run_time': 0.023143529891967773}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/token/', 'request_body': b'{"email":"admin@admin.com","password":"admin"}', 'response_body': {'refresh': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTYzNTM5ODAwOSwiaWF0IjoxNjM1MzExNjA5LCJqdGkiOiJkMmNjMjM0ODdjMGE0ZWE0YWVkZjNhZmU0ZmQ2MzkyZCIsInVzZXJfaWQiOjF9.ghYQrnRSVtSj3-WKeaq3fxhuwxYSdQmpemrEnAm4_24', 'access': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjM1MzExOTA5LCJpYXQiOjE2MzUzMTE2MDksImp0aSI6ImJjYWY4ZGZkY2FkNTRlZTg4ZWQ5M2UxMjAyOTRlNzY1IiwidXNlcl9pZCI6MX0.SrcR5ILHqew5BG0Pp9DsRWheXkl6SN7hHclH3mtikY0'}, 'run_time': 0.2280292510986328}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/user/login/', 'run_time': 0.22266316413879395}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/register/', 'run_time': 0.10981869697570801}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.05277371406555176}
+ERROR:SuperB.middleware:Unhandled Exception: name 'Shopping_card' is not defined
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/SuperB/middleware.py", line 58, in process_exception
+    raise exception
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/views.py", line 267, in post
+    basket = Shopping_card.objects.get_or_create(user=request.user)
+NameError: name 'Shopping_card' is not defined
+ERROR:django.request:Internal Server Error: /api/card/
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_response(request, response)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/middleware/clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'NameError' object has no attribute 'get'
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"1"}', 'run_time': 0.04677891731262207}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/token/', 'request_body': b'------WebKitFormBoundaryZvJprABptAA7bfkL\r\nContent-Disposition: form-data; name="csrfmiddlewaretoken"\r\n\r\nj2HUZvd29FNsDEkeNKKOJ6kBk72mVVhhoRUvi7WEePCyfYjBF3PQMYyP9GNPTp4B\r\n------WebKitFormBoundaryZvJprABptAA7bfkL\r\nContent-Disposition: form-data; name="email"\r\n\r\nadmin@admin.com\r\n------WebKitFormBoundaryZvJprABptAA7bfkL\r\nContent-Disposition: form-data; name="password"\r\n\r\nadmin\r\n------WebKitFormBoundaryZvJprABptAA7bfkL--\r\n', 'run_time': 0.1762073040008545}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/api-auth/login/?next=/api/token/', 'request_body': {}, 'run_time': 0.022228479385375977}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/api-auth/login/', 'request_body': b'csrfmiddlewaretoken=rg8UeTvt2mdHzDBGezD2L9vLHYssNJLxIbGVnN4OeLGvpnqCuyb9FVNGaGeBq1yl&next=%2Fapi%2Ftoken%2F&username=admin%40admin.com&password=admin&submit=Log+in', 'run_time': 0.18560504913330078}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/token/', 'request_body': {}, 'run_time': 0.01728510856628418}
+WARNING:django.request:Method Not Allowed: /api/token/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/token/', 'request_body': b'------WebKitFormBoundaryo0TVV10vJ2dEjUFS\r\nContent-Disposition: form-data; name="csrfmiddlewaretoken"\r\n\r\nq9SHltPU5ePfD29lLElL6kO22hkzqrJqZpL0dUqMHGj5bxuSwSf0eowolyWyMW0V\r\n------WebKitFormBoundaryo0TVV10vJ2dEjUFS\r\nContent-Disposition: form-data; name="email"\r\n\r\nadmin@admin.com\r\n------WebKitFormBoundaryo0TVV10vJ2dEjUFS\r\nContent-Disposition: form-data; name="password"\r\n\r\nadmin\r\n------WebKitFormBoundaryo0TVV10vJ2dEjUFS--\r\n', 'run_time': 0.1819918155670166}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.05806303024291992}
+ERROR:SuperB.middleware:Unhandled Exception: name 'Shopping_card' is not defined
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/SuperB/middleware.py", line 58, in process_exception
+    raise exception
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/views.py", line 267, in post
+    basket = Shopping_card.objects.get_or_create(user=request.user)
+NameError: name 'Shopping_card' is not defined
+ERROR:django.request:Internal Server Error: /api/card/
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_response(request, response)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/middleware/clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'NameError' object has no attribute 'get'
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"1"}', 'run_time': 0.04628610610961914}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/logout/', 'run_time': 0.01813650131225586}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/login/', 'run_time': 0.02340102195739746}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/user/user/', 'run_time': 0.0008990764617919922}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/login/?next=/admin/user/user/', 'run_time': 0.015546798706054688}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/admin/login/?next=/admin/user/user/', 'run_time': 0.17755722999572754}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/user/user/', 'run_time': 0.041779279708862305}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/jsi18n/', 'run_time': 0.010678291320800781}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/token/', 'request_body': b'------WebKitFormBoundarymUMFwkPqzXVS5Y1x\r\nContent-Disposition: form-data; name="csrfmiddlewaretoken"\r\n\r\nIYTWbQ9cdwhngi6I20ELs0pFn66U1gDZheMf3hK4PYLdONrfNey0A471GnITnLUu\r\n------WebKitFormBoundarymUMFwkPqzXVS5Y1x\r\nContent-Disposition: form-data; name="email"\r\n\r\nadmin@admin.com\r\n------WebKitFormBoundarymUMFwkPqzXVS5Y1x\r\nContent-Disposition: form-data; name="password"\r\n\r\nadmin\r\n------WebKitFormBoundarymUMFwkPqzXVS5Y1x--\r\n', 'run_time': 0.18144750595092773}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/api-auth/login/?next=/api/token/', 'request_body': {}, 'run_time': 0.01755070686340332}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/api-auth/login/', 'request_body': b'csrfmiddlewaretoken=PoE6MD9xE5BYsz4dXBcCpMGbPi0RLf832zVOyqjE1UqaW8yyt8MqQhTv9NzWPhwi&next=%2Fapi%2Ftoken%2F&username=admin%40admin.com&password=admin&submit=Log+in', 'run_time': 0.1805727481842041}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/token/', 'request_body': {}, 'run_time': 0.015906572341918945}
+WARNING:django.request:Method Not Allowed: /api/token/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/token/', 'request_body': b'------WebKitFormBoundaryCpb0n1dcnh2YIazB\r\nContent-Disposition: form-data; name="csrfmiddlewaretoken"\r\n\r\n5QYgbf72nk7ebgUbaJj93CyR6lZprW1VZWocK8X1QFpUNUnUriIxVQHx3Dt58pu1\r\n------WebKitFormBoundaryCpb0n1dcnh2YIazB\r\nContent-Disposition: form-data; name="email"\r\n\r\nadmin@admin.com\r\n------WebKitFormBoundaryCpb0n1dcnh2YIazB\r\nContent-Disposition: form-data; name="password"\r\n\r\nadmin\r\n------WebKitFormBoundaryCpb0n1dcnh2YIazB--\r\n', 'run_time': 0.1679689884185791}
+WARNING:django.security.csrf:Forbidden (CSRF token missing or incorrect.): /user/login/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/user/login/', 'run_time': 0.003699779510498047}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/token/', 'request_body': b'{"email":"admin@admin.com","password":"admin"}', 'response_body': {'refresh': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTYzNTM5ODA3MywiaWF0IjoxNjM1MzExNjczLCJqdGkiOiIxNjEwYzYyMGYzODA0MWMxYTgxNzkwYjUxMDU5YzMzZSIsInVzZXJfaWQiOjF9.iIUx9VmZkkz0AoSwUXJRd_Q0XTVJc72U_kECnU3hKs0', 'access': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjM1MzExOTczLCJpYXQiOjE2MzUzMTE2NzMsImp0aSI6IjNkNzY5MDFiOGU1MzQwMGRiNGE2OThhYWMyOWYxZmJhIiwidXNlcl9pZCI6MX0.A9jnD_bHSIsHXHbvBAg-QGlI_rfkLlEPSiazOWTmWDU'}, 'run_time': 0.2343616485595703}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/login/', 'run_time': 0.029715776443481445}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/logout/', 'run_time': 0.022802114486694336}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/login/', 'run_time': 0.015347957611083984}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/token/', 'request_body': b'{"email":"admin@admin.com","password":"admin"}', 'response_body': {'refresh': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTYzNTM5ODA4MSwiaWF0IjoxNjM1MzExNjgxLCJqdGkiOiJiYjMxZDYwZDg1MmY0NjYxOGRkYzM3OGI4ZTlmYjhjNCIsInVzZXJfaWQiOjF9.-i383hKay6xN_Bgom0QvN7fbd1nO5iIhEjL-GmC-rd0', 'access': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjM1MzExOTgxLCJpYXQiOjE2MzUzMTE2ODEsImp0aSI6IjQ4Y2U2MDU1YzViZDQxMDU4OGZlYWFlNDczY2VjZGFiIiwidXNlcl9pZCI6MX0.6jJQugCIATxZmoo926vN8fslEooW8FqBzJP9hbqxzYg'}, 'run_time': 0.22795867919921875}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/user/login/', 'run_time': 0.22229504585266113}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/register/', 'run_time': 0.03972005844116211}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.053095340728759766}
+ERROR:SuperB.middleware:Unhandled Exception: name 'Shopping_card' is not defined
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/SuperB/middleware.py", line 58, in process_exception
+    raise exception
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/views.py", line 267, in post
+    basket = Shopping_card.objects.get_or_create(user=request.user)
+NameError: name 'Shopping_card' is not defined
+ERROR:django.request:Internal Server Error: /api/card/
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_response(request, response)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/middleware/clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'NameError' object has no attribute 'get'
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"1"}', 'run_time': 0.09005618095397949}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/user/user/', 'run_time': 0.0816960334777832}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/jsi18n/', 'run_time': 0.03323674201965332}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/favicon.ico', 'run_time': 0.004372835159301758}
+WARNING:django.request:Not Found: /favicon.ico
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/token/', 'request_body': b'------WebKitFormBoundaryCpb0n1dcnh2YIazB\r\nContent-Disposition: form-data; name="csrfmiddlewaretoken"\r\n\r\n5QYgbf72nk7ebgUbaJj93CyR6lZprW1VZWocK8X1QFpUNUnUriIxVQHx3Dt58pu1\r\n------WebKitFormBoundaryCpb0n1dcnh2YIazB\r\nContent-Disposition: form-data; name="email"\r\n\r\nadmin@admin.com\r\n------WebKitFormBoundaryCpb0n1dcnh2YIazB\r\nContent-Disposition: form-data; name="password"\r\n\r\nadmin\r\n------WebKitFormBoundaryCpb0n1dcnh2YIazB--\r\n', 'run_time': 0.18897151947021484}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/favicon.ico', 'run_time': 0.005767822265625}
+WARNING:django.request:Not Found: /favicon.ico
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/SuperB/settings.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/token/', 'request_body': {}, 'run_time': 0.05093502998352051}
+WARNING:django.request:Method Not Allowed: /api/token/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/token/', 'request_body': b'------WebKitFormBoundarys48uiMeBKMmLvw7J\r\nContent-Disposition: form-data; name="csrfmiddlewaretoken"\r\n\r\nE98zxNObZh7lg63dVmihhiveoKNbqbbL01TmWybcSkzTqGC7hMUFOK931i2fFJKs\r\n------WebKitFormBoundarys48uiMeBKMmLvw7J\r\nContent-Disposition: form-data; name="email"\r\n\r\nadmin@admin.com\r\n------WebKitFormBoundarys48uiMeBKMmLvw7J\r\nContent-Disposition: form-data; name="password"\r\n\r\nadmin\r\n------WebKitFormBoundarys48uiMeBKMmLvw7J--\r\n', 'run_time': 0.19511961936950684}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/user/user/', 'run_time': 0.14473414421081543}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/jsi18n/', 'run_time': 0.015044212341308594}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.07888007164001465}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.07285380363464355}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.04942154884338379}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"1"}', 'response_body': {'detail': 'CSRF Failed: CSRF token missing or incorrect.'}, 'run_time': 0.02778935432434082}
+WARNING:django.request:Forbidden: /api/card/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"2"}', 'response_body': {'detail': 'CSRF Failed: CSRF token missing or incorrect.'}, 'run_time': 0.024485349655151367}
+WARNING:django.request:Forbidden: /api/card/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/logout/', 'run_time': 0.056349754333496094}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/login/', 'run_time': 0.025954246520996094}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/token/', 'request_body': b'{"email":"admin@admin.com","password":"admin"}', 'response_body': {'refresh': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTYzNTM5ODYyNSwiaWF0IjoxNjM1MzEyMjI1LCJqdGkiOiJkMzNiMDZiMzkzNDM0MjgyODIzNTZiNjNkZDYzMjUzOSIsInVzZXJfaWQiOjF9.b0ReBjTaY9HGmWoSMh3PRe5Flk4wCHz7yKtwYzC2DZg', 'access': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjM1MzEyNTI1LCJpYXQiOjE2MzUzMTIyMjUsImp0aSI6IjliNTJiODZhZDdmOTQ3OTU4OGU2YzM4ZTNmOWIxMDMxIiwidXNlcl9pZCI6MX0.CaKMkfneGsylzLN4g_xf3AxRUk-9qTacu1Pe-gJjykI'}, 'run_time': 0.22104358673095703}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/user/login/', 'run_time': 0.20907020568847656}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/register/', 'run_time': 0.024837970733642578}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.055029869079589844}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"1"}', 'response_body': {'detail': 'CSRF Failed: CSRF token missing or incorrect.'}, 'run_time': 0.026798725128173828}
+WARNING:django.request:Forbidden: /api/card/
+DEBUG:asyncio:Using selector: EpollSelector
+ERROR:SuperB.middleware:Unhandled Exception: User has no user_cart.
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/SuperB/middleware.py", line 58, in process_exception
+    raise exception
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/views.py", line 260, in get
+    serializer = self.serializer_class(request.user.user_cart)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/db/models/fields/related_descriptors.py", line 421, in __get__
+    raise self.RelatedObjectDoesNotExist(
+user.models.User.user_cart.RelatedObjectDoesNotExist: User has no user_cart.
+ERROR:django.request:Internal Server Error: /api/card/
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_response(request, response)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/middleware/clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'RelatedObjectDoesNotExist' object has no attribute 'get'
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/card/', 'request_body': {}, 'run_time': 0.05753779411315918}
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/views.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/views.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/views.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+ERROR:SuperB.middleware:Unhandled Exception: User has no user_cart.
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/SuperB/middleware.py", line 58, in process_exception
+    raise exception
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/views.py", line 261, in get
+    serializer = self.serializer_class(request.user.user_cart)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/db/models/fields/related_descriptors.py", line 421, in __get__
+    raise self.RelatedObjectDoesNotExist(
+user.models.User.user_cart.RelatedObjectDoesNotExist: User has no user_cart.
+ERROR:django.request:Internal Server Error: /api/card/
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_response(request, response)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/middleware/clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'RelatedObjectDoesNotExist' object has no attribute 'get'
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/card/', 'request_body': {}, 'run_time': 0.05513811111450195}
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/order/models.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+ERROR:SuperB.middleware:Unhandled Exception: User has no user_cart.
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/SuperB/middleware.py", line 58, in process_exception
+    raise exception
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/views.py", line 261, in get
+    serializer = self.serializer_class(request.user.user_cart)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/db/models/fields/related_descriptors.py", line 421, in __get__
+    raise self.RelatedObjectDoesNotExist(
+user.models.User.user_cart.RelatedObjectDoesNotExist: User has no user_cart.
+ERROR:django.request:Internal Server Error: /api/card/
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_response(request, response)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/middleware/clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'RelatedObjectDoesNotExist' object has no attribute 'get'
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/card/', 'request_body': {}, 'run_time': 0.061934471130371094}
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/views.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/views.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/card/', 'request_body': {}, 'run_time': 0.12522339820861816}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.053557395935058594}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.04647016525268555}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.03493523597717285}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide1_ckR4iZf.jpg', 'run_time': 0.007593870162963867}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide3_H0EsSvo.jpg', 'run_time': 0.008254766464233398}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/favicon.ico', 'run_time': 0.011043548583984375}
+WARNING:django.request:Not Found: /favicon.ico
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.05812549591064453}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide1_ckR4iZf.jpg', 'run_time': 0.002699136734008789}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide3_H0EsSvo.jpg', 'run_time': 0.02418065071105957}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/favicon.ico', 'run_time': 0.011694192886352539}
+WARNING:django.request:Not Found: /favicon.ico
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"1"}', 'response_body': {'detail': 'CSRF Failed: CSRF token missing or incorrect.'}, 'run_time': 0.024600505828857422}
+WARNING:django.request:Forbidden: /api/card/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/logout/', 'run_time': 0.04367804527282715}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/login/', 'run_time': 0.022351980209350586}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/token/', 'request_body': b'{"email":"rial@mail.ru","password":"123456"}', 'response_body': {'refresh': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTYzNTQwNzgxNiwiaWF0IjoxNjM1MzIxNDE2LCJqdGkiOiJmMTc4ZWI1MGYwM2M0M2U3OWY4YjY2YmU3NDIxMDA1YiIsInVzZXJfaWQiOjJ9.ETbqcD2G0yRUE8G3lgio1XMqUcon2DvfjkUA9MCQTT4', 'access': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjM1MzIxNzE2LCJpYXQiOjE2MzUzMjE0MTYsImp0aSI6IjJkNDViNmU0OTI1YTRmZDk4OWQxYjMwNzU5OGVkZGM3IiwidXNlcl9pZCI6Mn0.lUvFuQoESMoBkEGCgXgqUPvSvom_hVzW1PA_D_idEH0'}, 'run_time': 0.22309160232543945}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/user/login/', 'run_time': 0.22101354598999023}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/register/', 'run_time': 0.03668951988220215}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.05392813682556152}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"1"}', 'response_body': {'detail': 'CSRF Failed: CSRF token missing or incorrect.'}, 'run_time': 0.008585691452026367}
+WARNING:django.request:Forbidden: /api/card/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"1"}', 'response_body': {'detail': 'CSRF Failed: CSRF token missing or incorrect.'}, 'run_time': 0.012565135955810547}
+WARNING:django.request:Forbidden: /api/card/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"1"}', 'response_body': {'detail': 'CSRF Failed: CSRF token missing or incorrect.'}, 'run_time': 0.0071697235107421875}
+WARNING:django.request:Forbidden: /api/card/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/logout/', 'run_time': 0.05374002456665039}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/login/', 'run_time': 0.020058393478393555}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/login/', 'run_time': 0.018288135528564453}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/token/', 'request_body': b'{"email":"rial@mail.ru","password":"123456"}', 'response_body': {'refresh': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTYzNTQxMDA5NiwiaWF0IjoxNjM1MzIzNjk2LCJqdGkiOiIzZGQ5ZDFkY2YxNDg0MjljYjJhNmI3ZDFkY2RkYzgxNiIsInVzZXJfaWQiOjJ9.YqDDWI1XHtOKYjN96-fhdYAhW9kD13vnnxGoj4J70JA', 'access': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjM1MzIzOTk2LCJpYXQiOjE2MzUzMjM2OTYsImp0aSI6ImE0MjM4ZTljYTczMjRmNjc5MjExNDY0ZWVmMTg2NjU3IiwidXNlcl9pZCI6Mn0.mTPwmlMd4XjpD7ZGBTTVSsbIfrB1xQL9uOlTe4ys2qQ'}, 'run_time': 0.32495880126953125}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/user/login/', 'run_time': 0.3536036014556885}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/register/', 'run_time': 0.04150700569152832}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.06312012672424316}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"1"}', 'response_body': {'detail': 'CSRF Failed: CSRF token missing or incorrect.'}, 'run_time': 0.028531312942504883}
+WARNING:django.request:Forbidden: /api/card/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/logout/', 'run_time': 0.05717325210571289}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/login/', 'run_time': 0.04220294952392578}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/token/', 'request_body': b'{"email":"rial@mail.ru","password":"123456"}', 'response_body': {'refresh': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTYzNTQxMDIyNSwiaWF0IjoxNjM1MzIzODI1LCJqdGkiOiI1OWNmMWNmNTEyMjU0NjJkYWJjZWQ5ZTdhNGVjYmM0ZiIsInVzZXJfaWQiOjJ9.ObCOWCGiy-bWNmiXMWSa9_4AARYPuKa1-YA_4R4CjgI', 'access': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjM1MzI0MTI1LCJpYXQiOjE2MzUzMjM4MjUsImp0aSI6ImMwMGYwYjEzOTUwYzRlNzJiODBkNjZmYTg5NjgwMjIyIiwidXNlcl9pZCI6Mn0.Qwriupw5z1dhEbXMM7pS4uTnhu1LQYp4k11UiqPeJyk'}, 'run_time': 0.2014014720916748}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/user/login/', 'run_time': 0.20332694053649902}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/register/', 'run_time': 0.04416918754577637}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.036744117736816406}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"1"}', 'response_body': {'detail': 'CSRF Failed: CSRF token missing or incorrect.'}, 'run_time': 0.022188663482666016}
+WARNING:django.request:Forbidden: /api/card/
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/SuperB/settings.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+ERROR:SuperB.middleware:Unhandled Exception: 'ShoppingCart' object has no attribute 'products'
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/SuperB/middleware.py", line 58, in process_exception
+    raise exception
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/views.py", line 270, in post
+    request.user.user_cart.products.add(product)
+AttributeError: 'ShoppingCart' object has no attribute 'products'
+ERROR:django.request:Internal Server Error: /api/card/
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_response(request, response)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/middleware/clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'AttributeError' object has no attribute 'get'
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"1"}', 'run_time': 0.15134596824645996}
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/views.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"1"}', 'response_body': {'success': True, 'message': 'Product added to your card.'}, 'run_time': 0.08762669563293457}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/core/subscriber/', 'run_time': 0.052078962326049805}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/login/?next=/admin/core/subscriber/', 'run_time': 0.028249025344848633}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/admin/login/?next=/admin/core/subscriber/', 'run_time': 0.15356683731079102}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/core/subscriber/', 'run_time': 0.03928017616271973}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/jsi18n/', 'run_time': 0.010417461395263672}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/order/shoppingcart/', 'run_time': 0.0488588809967041}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/jsi18n/', 'run_time': 0.010978221893310547}
+ERROR:SuperB.middleware:Unhandled Exception: 'ShoppingCart' object has no attribute 'user_cart'
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/SuperB/middleware.py", line 58, in process_exception
+    raise exception
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1660, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1540, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1632, in _changeform_view
+    'subtitle': str(obj) if obj else None,
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/order/models.py", line 18, in __str__
+    return self.user_cart
+AttributeError: 'ShoppingCart' object has no attribute 'user_cart'
+ERROR:django.request:Internal Server Error: /admin/order/shoppingcart/2/change/
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_response(request, response)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/middleware/clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'AttributeError' object has no attribute 'get'
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/order/shoppingcart/2/change/', 'run_time': 0.04128003120422363}
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/order/models.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+ERROR:SuperB.middleware:Unhandled Exception: __str__ returned non-string (type User)
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/SuperB/middleware.py", line 58, in process_exception
+    raise exception
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1660, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1540, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1632, in _changeform_view
+    'subtitle': str(obj) if obj else None,
+TypeError: __str__ returned non-string (type User)
+ERROR:django.request:Internal Server Error: /admin/order/shoppingcart/2/change/
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_response(request, response)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/middleware/clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'TypeError' object has no attribute 'get'
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/order/shoppingcart/2/change/', 'run_time': 0.10347509384155273}
+DEBUG:asyncio:Using selector: EpollSelector
+ERROR:SuperB.middleware:Unhandled Exception: __str__ returned non-string (type User)
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/SuperB/middleware.py", line 58, in process_exception
+    raise exception
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1660, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1540, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1632, in _changeform_view
+    'subtitle': str(obj) if obj else None,
+TypeError: __str__ returned non-string (type User)
+ERROR:django.request:Internal Server Error: /admin/order/shoppingcart/2/change/
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_response(request, response)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/middleware/clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'TypeError' object has no attribute 'get'
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/order/shoppingcart/2/change/', 'run_time': 0.11235737800598145}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/order/shoppingcart/', 'run_time': 0.05741524696350098}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/jsi18n/', 'run_time': 0.021657466888427734}
+ERROR:SuperB.middleware:Unhandled Exception: __str__ returned non-string (type User)
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/SuperB/middleware.py", line 58, in process_exception
+    raise exception
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1660, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1540, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1632, in _changeform_view
+    'subtitle': str(obj) if obj else None,
+TypeError: __str__ returned non-string (type User)
+ERROR:django.request:Internal Server Error: /admin/order/shoppingcart/1/change/
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_response(request, response)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/middleware/clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'TypeError' object has no attribute 'get'
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/order/shoppingcart/1/change/', 'run_time': 0.03815031051635742}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/order/shoppingcart/', 'run_time': 0.046744585037231445}
+ERROR:SuperB.middleware:Unhandled Exception: __str__ returned non-string (type User)
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/SuperB/middleware.py", line 58, in process_exception
+    raise exception
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1660, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1540, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1632, in _changeform_view
+    'subtitle': str(obj) if obj else None,
+TypeError: __str__ returned non-string (type User)
+ERROR:django.request:Internal Server Error: /admin/order/shoppingcart/2/change/
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_response(request, response)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/middleware/clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'TypeError' object has no attribute 'get'
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/order/shoppingcart/2/change/', 'run_time': 0.08458614349365234}
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/order/models.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/order/shoppingcart/2/change/', 'run_time': 0.11167335510253906}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/jsi18n/', 'run_time': 0.013426780700683594}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/order/shopping-cart/', 'run_time': 0.033289194107055664}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/card/', 'request_body': {}, 'run_time': 0.0226900577545166}
+WARNING:django.request:Unauthorized: /api/card/
+DEBUG:asyncio:Using selector: EpollSelector

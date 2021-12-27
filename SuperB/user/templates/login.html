@@ -1,0 +1,85 @@
+﻿{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Log In{% endblock %}
+
+{% block base %}
+
+<div id="page">
+
+
+  <!-- Main Container -->
+  <section class="main-container col1-layout bounceInUp animated">
+    <div class="main container">
+      <div class="account-login">
+        <div class="page-title">
+          <h1>Login or Create an Account</h1>
+        </div>
+        <fieldset class="col2-set">
+          <legend>Login or Create an Account</legend>
+          <div class="col-1 new-users"><strong>New Customers</strong>
+            <div class="content">
+              <p>By creating an account with our store, you will be able to move through the checkout process faster,
+                store multiple shipping addresses, view and track your orders in your account and more.</p>
+              <div class="buttons-set">
+                <a href="{%  url 'register' %}">
+                <button class="button create-account"><span>Create an Account</span></button>
+              </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-2 registered-users"><strong>Registered Customers</strong>
+            {% if form.errors %}
+            <div class="alert alert-danger">
+              {{ form.errors }}
+            </div>
+            {% endif %}
+            <form method="post" id="login_form">
+              {% csrf_token %}
+              <div class="content">
+                <p>If you have an account with us, please log in.</p>
+                <ul class="form-list">
+                  <li>
+                    <label for="id_email">Email Address <span class="required">*</span></label>
+                    <br>
+                    {{form.email}}
+                  </li>
+                  <li>
+                    <label for="id_password">Password <span class="required">*</span></label>
+                    <br>
+                    {{form.password}}
+                  </li>
+                </ul>
+                <p class="required">* Required Fields</p>
+                <div class="buttons-set">
+                  <button id="log_sbmt" class="button login"><span>Login</span></button>
+                  <a class="forgot-word" href="{% url 'reset_password' %}">Forgot Your Password?</a>
+                </div>
+              </div>
+            </form><br><br>
+            <!-- <a href="{% url 'social:begin' 'github' %}">Login with GitHub</a><br> -->
+            <a class="btn btn-primary" href="{% url 'social:begin' 'google-oauth2' %}">Login with Google</a>
+            <a class="btn btn-primary" href="{% url 'social:begin' 'facebook' %}">Login with Facebook</a>
+            <!-- <a href="{% url 'social:begin' 'google' %}">Login With Google</a> -->
+          </div>
+        </fieldset>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+  </section>
+  <!-- Main Container End -->
+  
+  {% block link_js %}
+  <script type="text/javascript" src="{% static 'js/login.js' %}"></script>
+  {% endblock %}
+
+
+  </body>
+
+  </html>
+
+  {% endblock %}

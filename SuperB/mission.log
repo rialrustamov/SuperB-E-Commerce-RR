@@ -1,0 +1,16 @@
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/product/product/', 'run_time': 0.09799361228942871}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/jsi18n/', 'run_time': 0.011802434921264648}
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/SuperB/middleware.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/SuperB/middleware.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/SuperB/middleware.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/SuperB/middleware.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/SuperB/middleware.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/product/product/', 'run_time': 0.1184682846069336}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/jsi18n/', 'run_time': 0.010915994644165039}
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/SuperB/middleware.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector

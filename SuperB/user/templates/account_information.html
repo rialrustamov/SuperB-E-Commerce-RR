@@ -1,0 +1,96 @@
+﻿{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Account Information{% endblock %}
+
+{% block base %}
+
+<div id="page">
+
+
+  <!-- Main Container -->
+  <section class="main-container col2-right-layout">
+    <div class="main container">
+      <div class="row">
+        <div class="col-main col-sm-9 animated" style="visibility: visible;">
+          <div class="my-account">
+            <div class="page-title">
+              <h1>Edit Account Information</h1>
+            </div>
+            <div class="line"></div>
+            <div class="dashboard">
+              {% if request.user.is_authenticated %}
+              <form method="post" id="form-validate">
+                {% csrf_token %}
+                <div class="fieldset">
+                  <input name="" type="hidden" value="bO6ubPokBJ71l86o">
+                  <h2 class="legend">Account Information</h2>
+                  <ul class="form-list">
+                    <li class="fields">
+                      <div class="customer-name">
+                        <div class="input-box name-firstname">
+                          <label for="firstname">First Name<span class="required">*</span></label>
+                          <div class="input-box1">
+                            {{user_info.first_name}}
+                          </div>
+                        </div>
+                        <div class="input-box name-lastname">
+                          <label for="lastname">Last Name<span class="required">*</span></label>
+                          <div class="input-box1">
+                            {{user_info.last_name}}
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="control">
+                      <button>
+                        <a href="{% url 'password_change' %}">
+                          <label for="change_password">Change Password</label>
+                        </a>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="buttons-set">
+                  <p class="required">* Required Fields</p>
+                  <button type="submit" title="Save" class="button"><span>Save</span></button>
+                  <a href="#"><small>« </small>Back</a>
+                </div>
+              </form>
+              {% else %}
+              <h2 style="color: brown;">You don't login or register in this site</h2>
+              {% endif %}
+            </div>
+            <!--dashboard-->
+          </div>
+        </div>
+        <aside class="col-right sidebar col-sm-3 animated" style="visibility: visible;">
+          <div class="block block-account">
+            <div class="block-title"> My Account </div>
+            <div class="block-content">
+              <ul>
+                <li class="current"><a><span>Edit Account</span></a></li>
+                <li><a href="{% url 'contact_info' %}">Contact Information</a></li>
+                <li><a href="{% url 'product_list' %}"><span> Products</span></a></li>
+                <li><a href="{% url 'wishlist' %}"><span> My Wishlist</span></a></li>
+                <li class="last"><a href="{% url 'checkout' %}"><span>Checkout</span></a></li>
+              </ul>
+            </div>
+            <!--block-content-->
+          </div>
+          <!--block block-account-->
+
+        </aside>
+        <!--col-right sidebar col-sm-3-->
+      </div>
+    </div>
+  </section>
+  <!-- Main Container End -->
+
+
+
+  </body>
+
+  </html>
+
+  {% endblock %}

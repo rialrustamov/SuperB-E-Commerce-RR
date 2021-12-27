@@ -1,0 +1,102 @@
+﻿{% extends 'base.html' %}
+{% load static i18n %}
+
+{% block title %}Shopping Cart{% endblock %}
+
+{% block base %}
+
+<div id="page"> 
+
+  
+  <!-- Main Container -->
+  <section class="main-container col1-layout">
+    <div class="main container">
+      <div class="col-main">
+        <div class="cart">
+          <div class="page-title">
+            <h1>Shopping Cart</h1>
+          </div>
+          <div class="table-responsive">
+            <form method="post" action="#">
+              <fieldset>
+                <table class="data-table cart-table" id="shopping-cart-table">
+                  <thead>
+                    <tr class="first last">
+                      <th rowspan="1">&nbsp;</th>
+                      <th rowspan="1"><span class="nobr">Product Name</span></th>
+                      <th rowspan="1" class="hidden-phone"><span class="nobr">Move to Wishlist</span></th>
+                      <th colspan="1" class="a-center"><span class="nobr">Unit Price</span></th>
+                      <th class="a-center " rowspan="1">Qty</th>
+                      <th colspan="1" class="a-center">Subtotal</th>
+                      <th class="a-center" rowspan="1">&nbsp;</th>
+                    </tr>
+                  </thead>
+                  <tfoot>
+                    <tr class="first last">
+                      <td class="a-right last" colspan="50"><button onclick="" class="button btn-continue" title="Continue Shopping" type="button"><span>Continue Shopping</span></button>
+                        <button class="button btn-update" title="Update Cart" value="update_qty" name="update_cart_action" type="button" id="update_cart_qty"><span>Update Cart</span></button>
+                        <button id="empty_cart_button" class="button" title="Clear Cart" value="empty_cart" name="update_cart_action" type="button"><span>Clear Cart</span></button></td>
+                    </tr>
+                  </tfoot>
+                  <tbody id="shopping-cart-page">
+
+                  </tbody>
+                </table>
+              </fieldset>
+            </form>
+          </div>
+          <!-- BEGIN CART COLLATERALS -->
+          <div class="cart-collaterals row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+              <div class="totals">
+                <h3>Shopping Cart Total</h3>
+                <div class="inner">
+                  <table class="table shopping-cart-table-total" id="shopping-cart-totals-table">
+                    <colgroup>
+                    <col>
+                    <col width="1">
+                    </colgroup>
+                    <tfoot>
+                      <tr>
+                        <td colspan="1" class="a-left"><strong>Grand Total</strong></td>
+                        <td class="a-right"><strong><span class="price" id="total_product_cart_price"></span></strong></td>
+                      </tr>
+                    </tfoot>
+                    <tbody>
+                      <tr>
+                        <td colspan="1" class="a-left"> Subtotal </td>
+                        <td class="a-right"><span class="price" id="overall_cart_price">$77.38</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <ul class="checkout">
+                    <li>
+                      <a href="{% url 'checkout_bill' %}">
+                        <button class="button btn-proceed-checkout" title="Proceed to Checkout" type="button"><span>Proceed to Checkout</span></button>
+                      </a>
+                    </li>
+                    <br>
+                    <br>
+                  </ul>
+                </div>
+              </div>
+              <!--inner--> 
+              
+            </div>
+          </div>
+          
+          <!--cart-collaterals--> 
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+</div>
+
+</body>
+</html>
+{% endblock %}

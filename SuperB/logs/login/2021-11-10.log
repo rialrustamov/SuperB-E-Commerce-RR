@@ -1,0 +1,332 @@
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/product/models.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/product/models.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/product/models.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/product/models.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/product/models.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/product/models.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/product/models.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/product/models.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/product/models.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/admin/product/review/', 'run_time': 0.30110883712768555}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/admin/jsi18n/', 'run_time': 0.017207860946655273}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/favicon.ico', 'run_time': 0.04741358757019043}
+WARNING:django.request:Not Found: /favicon.ico
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/admin/product/review/', 'run_time': 0.2042403221130371}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/admin/jsi18n/', 'run_time': 0.018103599548339844}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/en/admin/product/review/', 'run_time': 0.07521820068359375}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/en/admin/product/review/', 'run_time': 0.05409431457519531}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/admin/product/review/', 'run_time': 0.11093592643737793}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/admin/jsi18n/', 'run_time': 0.02317070960998535}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/en/product/product-detail/2/', 'run_time': 0.1280074119567871}
+ERROR:django.request:Internal Server Error: /media/images/image/book_slide3.jpg
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/SuperB/middleware.py", line 46, in __call__
+    if response and response["content-type"] == "application/json":
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/http/response.py", line 178, in __getitem__
+    return self.headers[header]
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/datastructures.py", line 316, in __getitem__
+    return self._store[key.lower()][1]
+KeyError: 'content-type'
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide3.jpg', 'run_time': 0.005769252777099609}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/product/product-detail/2/', 'run_time': 0.22949552536010742}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/card/', 'request_body': {}, 'response_body': [{'id': 51, 'product': {'title': 'Product #2', 'price': '60.00', 'discount_price': '45.43', 'category': 1, 'brand': 1, 'description': '1234567890-', 'total_quantity': 1, 'main_product': {'id': 2, 'created_at': '2021-11-03T14:53:58.308673+04:00', 'updated_at': '2021-11-08T00:03:22.535817+04:00', 'color': 1, 'size': 1, 'quantity': 1, 'version_description': '', 'is_main': True, 'product': 2}, 'main_image': '/media/images/image/book_slide3.jpg', 'versions': [], 'product_tag': [1]}, 'created_at': '2021-11-09T19:26:48.497018+04:00', 'updated_at': '2021-11-09T19:52:58.707477+04:00', 'quantity': 11, 'cart': 13}, {'id': 52, 'product': {'title': 'Product #1', 'price': '50.00', 'discount_price': '35.37', 'category': 1, 'brand': 1, 'description': 'wertyhjksdfghjk', 'total_quantity': 82, 'main_product': {'id': 1, 'created_at': '2021-11-03T14:42:33.534927+04:00', 'updated_at': '2021-11-08T00:02:55.971112+04:00', 'color': 2, 'size': 2, 'quantity': 82, 'version_description': '', 'is_main': True, 'product': 1}, 'main_image': '/media/images/image/book_slide1.jpg', 'versions': [], 'product_tag': [1]}, 'created_at': '2021-11-09T19:33:56.168989+04:00', 'updated_at': '2021-11-09T19:52:58.709247+04:00', 'quantity': 20, 'cart': 13}], 'run_time': 0.1397545337677002}
+ERROR:django.request:Internal Server Error: /media/images/image/book_slide1.jpg
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/SuperB/middleware.py", line 46, in __call__
+    if response and response["content-type"] == "application/json":
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/http/response.py", line 178, in __getitem__
+    return self.headers[header]
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/datastructures.py", line 316, in __getitem__
+    return self._store[key.lower()][1]
+KeyError: 'content-type'
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/admin/product/review/', 'run_time': 0.07777929306030273}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/admin/jsi18n/', 'run_time': 0.014278650283813477}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/admin/product/review/', 'run_time': 0.08149456977844238}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/admin/jsi18n/', 'run_time': 0.017323017120361328}
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/product/models.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/en/product/product-detail/2/', 'run_time': 0.17853593826293945}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide3.jpg', 'run_time': 0.011478424072265625}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/product/product-detail/2/', 'run_time': 0.20620274543762207}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/favicon.ico', 'run_time': 0.012085914611816406}
+WARNING:django.request:Not Found: /favicon.ico
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/card/', 'request_body': {}, 'response_body': [{'id': 51, 'product': {'title': 'Product #2', 'price': '60.00', 'discount_price': '45.43', 'category': 1, 'brand': 1, 'description': '1234567890-', 'total_quantity': 1, 'main_product': {'id': 2, 'created_at': '2021-11-03T14:53:58.308673+04:00', 'updated_at': '2021-11-08T00:03:22.535817+04:00', 'color': 1, 'size': 1, 'quantity': 1, 'version_description': '', 'is_main': True, 'product': 2}, 'main_image': '/media/images/image/book_slide3.jpg', 'versions': [], 'product_tag': [1]}, 'created_at': '2021-11-09T19:26:48.497018+04:00', 'updated_at': '2021-11-09T19:52:58.707477+04:00', 'quantity': 11, 'cart': 13}, {'id': 52, 'product': {'title': 'Product #1', 'price': '50.00', 'discount_price': '35.37', 'category': 1, 'brand': 1, 'description': 'wertyhjksdfghjk', 'total_quantity': 82, 'main_product': {'id': 1, 'created_at': '2021-11-03T14:42:33.534927+04:00', 'updated_at': '2021-11-08T00:02:55.971112+04:00', 'color': 2, 'size': 2, 'quantity': 82, 'version_description': '', 'is_main': True, 'product': 1}, 'main_image': '/media/images/image/book_slide1.jpg', 'versions': [], 'product_tag': [1]}, 'created_at': '2021-11-09T19:33:56.168989+04:00', 'updated_at': '2021-11-09T19:52:58.709247+04:00', 'quantity': 20, 'cart': 13}], 'run_time': 0.17554640769958496}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide1.jpg', 'run_time': 0.0026760101318359375}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/en/product/product-detail/2/', 'run_time': 0.11704802513122559}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/product/product-detail/2/', 'run_time': 0.199052095413208}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/card/', 'request_body': {}, 'response_body': [{'id': 51, 'product': {'title': 'Product #2', 'price': '60.00', 'discount_price': '45.43', 'category': 1, 'brand': 1, 'description': '1234567890-', 'total_quantity': 1, 'main_product': {'id': 2, 'created_at': '2021-11-03T14:53:58.308673+04:00', 'updated_at': '2021-11-08T00:03:22.535817+04:00', 'color': 1, 'size': 1, 'quantity': 1, 'version_description': '', 'is_main': True, 'product': 2}, 'main_image': '/media/images/image/book_slide3.jpg', 'versions': [], 'product_tag': [1]}, 'created_at': '2021-11-09T19:26:48.497018+04:00', 'updated_at': '2021-11-09T19:52:58.707477+04:00', 'quantity': 11, 'cart': 13}, {'id': 52, 'product': {'title': 'Product #1', 'price': '50.00', 'discount_price': '35.37', 'category': 1, 'brand': 1, 'description': 'wertyhjksdfghjk', 'total_quantity': 82, 'main_product': {'id': 1, 'created_at': '2021-11-03T14:42:33.534927+04:00', 'updated_at': '2021-11-08T00:02:55.971112+04:00', 'color': 2, 'size': 2, 'quantity': 82, 'version_description': '', 'is_main': True, 'product': 1}, 'main_image': '/media/images/image/book_slide1.jpg', 'versions': [], 'product_tag': [1]}, 'created_at': '2021-11-09T19:33:56.168989+04:00', 'updated_at': '2021-11-09T19:52:58.709247+04:00', 'quantity': 20, 'cart': 13}], 'run_time': 0.09471774101257324}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/admin/product/review/', 'run_time': 0.15461206436157227}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/admin/jsi18n/', 'run_time': 0.016334056854248047}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/admin/product/review/41/change/', 'run_time': 0.13472676277160645}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/admin/jsi18n/', 'run_time': 0.016872882843017578}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/admin/product/review/41/delete/', 'run_time': 0.09970426559448242}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/en/admin/product/review/41/delete/', 'run_time': 0.037093162536621094}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/admin/product/review/', 'run_time': 0.08868122100830078}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/admin/jsi18n/', 'run_time': 0.015291690826416016}
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/product/product-detail/2/', 'run_time': 0.1827096939086914}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/product/product-detail/2/', 'run_time': 0.16907262802124023}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/card/', 'request_body': {}, 'response_body': [{'id': 51, 'product': {'title': 'Product #2', 'price': '60.00', 'discount_price': '45.43', 'category': 1, 'brand': 1, 'description': '1234567890-', 'total_quantity': 1, 'main_product': {'id': 2, 'created_at': '2021-11-03T14:53:58.308673+04:00', 'updated_at': '2021-11-08T00:03:22.535817+04:00', 'color': 1, 'size': 1, 'quantity': 1, 'version_description': '', 'is_main': True, 'product': 2}, 'main_image': '/media/images/image/book_slide3.jpg', 'versions': [], 'product_tag': [1]}, 'created_at': '2021-11-09T19:26:48.497018+04:00', 'updated_at': '2021-11-09T19:52:58.707477+04:00', 'quantity': 11, 'cart': 13}, {'id': 52, 'product': {'title': 'Product #1', 'price': '50.00', 'discount_price': '35.37', 'category': 1, 'brand': 1, 'description': 'wertyhjksdfghjk', 'total_quantity': 82, 'main_product': {'id': 1, 'created_at': '2021-11-03T14:42:33.534927+04:00', 'updated_at': '2021-11-08T00:02:55.971112+04:00', 'color': 2, 'size': 2, 'quantity': 82, 'version_description': '', 'is_main': True, 'product': 1}, 'main_image': '/media/images/image/book_slide1.jpg', 'versions': [], 'product_tag': [1]}, 'created_at': '2021-11-09T19:33:56.168989+04:00', 'updated_at': '2021-11-09T19:52:58.709247+04:00', 'quantity': 20, 'cart': 13}], 'run_time': 0.13237524032592773}
+ERROR:SuperB.middleware:Unhandled Exception: Field 'price_rating' expected a number but got '60%'.
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py", line 1823, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: '60%'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/SuperB/middleware.py", line 58, in process_exception
+    raise exception
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/product/views.py", line 90, in post
+    review.save()
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/db/models/base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/db/models/base.py", line 763, in save_base
+    updated = self._save_table(
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/db/models/base.py", line 868, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/db/models/base.py", line 906, in _do_insert
+    return manager._insert(
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1415, in execute_sql
+    for sql, params in self.as_sql():
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1358, in as_sql
+    value_rows = [
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1359, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1359, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1300, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py", line 842, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py", line 837, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py", line 1825, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'price_rating' expected a number but got '60%'.
+ERROR:django.request:Internal Server Error: /en/product/product-detail/2/
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_response(request, response)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/middleware/clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'ValueError' object has no attribute 'get'
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/en/product/product-detail/2/', 'run_time': 0.08910417556762695}
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/product/models.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/product/models.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/product/models.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/product/product-detail/2/', 'run_time': 0.18938732147216797}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/product/product-detail/2/', 'run_time': 0.16692519187927246}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/card/', 'request_body': {}, 'response_body': [{'id': 51, 'product': {'title': 'Product #2', 'price': '60.00', 'discount_price': '45.43', 'category': 1, 'brand': 1, 'description': '1234567890-', 'total_quantity': 1, 'main_product': {'id': 2, 'created_at': '2021-11-03T14:53:58.308673+04:00', 'updated_at': '2021-11-08T00:03:22.535817+04:00', 'color': 1, 'size': 1, 'quantity': 1, 'version_description': '', 'is_main': True, 'product': 2}, 'main_image': '/media/images/image/book_slide3.jpg', 'versions': [], 'product_tag': [1]}, 'created_at': '2021-11-09T19:26:48.497018+04:00', 'updated_at': '2021-11-09T19:52:58.707477+04:00', 'quantity': 11, 'cart': 13}, {'id': 52, 'product': {'title': 'Product #1', 'price': '50.00', 'discount_price': '35.37', 'category': 1, 'brand': 1, 'description': 'wertyhjksdfghjk', 'total_quantity': 82, 'main_product': {'id': 1, 'created_at': '2021-11-03T14:42:33.534927+04:00', 'updated_at': '2021-11-08T00:02:55.971112+04:00', 'color': 2, 'size': 2, 'quantity': 82, 'version_description': '', 'is_main': True, 'product': 1}, 'main_image': '/media/images/image/book_slide1.jpg', 'versions': [], 'product_tag': [1]}, 'created_at': '2021-11-09T19:33:56.168989+04:00', 'updated_at': '2021-11-09T19:52:58.709247+04:00', 'quantity': 20, 'cart': 13}], 'run_time': 0.14900493621826172}
+ERROR:SuperB.middleware:Unhandled Exception: Field 'price_rating' expected a number but got '60%'.
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py", line 1823, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: '60%'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/SuperB/middleware.py", line 58, in process_exception
+    raise exception
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/product/views.py", line 90, in post
+    review.save()
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/db/models/base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/db/models/base.py", line 763, in save_base
+    updated = self._save_table(
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/db/models/base.py", line 868, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/db/models/base.py", line 906, in _do_insert
+    return manager._insert(
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1415, in execute_sql
+    for sql, params in self.as_sql():
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1358, in as_sql
+    value_rows = [
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1359, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1359, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1300, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py", line 842, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py", line 837, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/db/models/fields/__init__.py", line 1825, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'price_rating' expected a number but got '60%'.
+ERROR:django.request:Internal Server Error: /en/product/product-detail/2/
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_response(request, response)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/middleware/clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'ValueError' object has no attribute 'get'
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/en/product/product-detail/2/', 'run_time': 0.07848095893859863}
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/product/forms.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/product/product-detail/2/', 'run_time': 0.1833956241607666}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/product/product-detail/2/', 'run_time': 0.21578717231750488}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/card/', 'request_body': {}, 'response_body': [{'id': 51, 'product': {'title': 'Product #2', 'price': '60.00', 'discount_price': '45.43', 'category': 1, 'brand': 1, 'description': '1234567890-', 'total_quantity': 1, 'main_product': {'id': 2, 'created_at': '2021-11-03T14:53:58.308673+04:00', 'updated_at': '2021-11-08T00:03:22.535817+04:00', 'color': 1, 'size': 1, 'quantity': 1, 'version_description': '', 'is_main': True, 'product': 2}, 'main_image': '/media/images/image/book_slide3.jpg', 'versions': [], 'product_tag': [1]}, 'created_at': '2021-11-09T19:26:48.497018+04:00', 'updated_at': '2021-11-09T19:52:58.707477+04:00', 'quantity': 11, 'cart': 13}, {'id': 52, 'product': {'title': 'Product #1', 'price': '50.00', 'discount_price': '35.37', 'category': 1, 'brand': 1, 'description': 'wertyhjksdfghjk', 'total_quantity': 82, 'main_product': {'id': 1, 'created_at': '2021-11-03T14:42:33.534927+04:00', 'updated_at': '2021-11-08T00:02:55.971112+04:00', 'color': 2, 'size': 2, 'quantity': 82, 'version_description': '', 'is_main': True, 'product': 1}, 'main_image': '/media/images/image/book_slide1.jpg', 'versions': [], 'product_tag': [1]}, 'created_at': '2021-11-09T19:33:56.168989+04:00', 'updated_at': '2021-11-09T19:52:58.709247+04:00', 'quantity': 20, 'cart': 13}], 'run_time': 0.17281413078308105}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/en/product/product-detail/2/', 'run_time': 0.12019801139831543}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/product/product-detail/2/', 'run_time': 0.2040719985961914}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/card/', 'request_body': {}, 'response_body': [{'id': 51, 'product': {'title': 'Product #2', 'price': '60.00', 'discount_price': '45.43', 'category': 1, 'brand': 1, 'description': '1234567890-', 'total_quantity': 1, 'main_product': {'id': 2, 'created_at': '2021-11-03T14:53:58.308673+04:00', 'updated_at': '2021-11-08T00:03:22.535817+04:00', 'color': 1, 'size': 1, 'quantity': 1, 'version_description': '', 'is_main': True, 'product': 2}, 'main_image': '/media/images/image/book_slide3.jpg', 'versions': [], 'product_tag': [1]}, 'created_at': '2021-11-09T19:26:48.497018+04:00', 'updated_at': '2021-11-09T19:52:58.707477+04:00', 'quantity': 11, 'cart': 13}, {'id': 52, 'product': {'title': 'Product #1', 'price': '50.00', 'discount_price': '35.37', 'category': 1, 'brand': 1, 'description': 'wertyhjksdfghjk', 'total_quantity': 82, 'main_product': {'id': 1, 'created_at': '2021-11-03T14:42:33.534927+04:00', 'updated_at': '2021-11-08T00:02:55.971112+04:00', 'color': 2, 'size': 2, 'quantity': 82, 'version_description': '', 'is_main': True, 'product': 1}, 'main_image': '/media/images/image/book_slide1.jpg', 'versions': [], 'product_tag': [1]}, 'created_at': '2021-11-09T19:33:56.168989+04:00', 'updated_at': '2021-11-09T19:52:58.709247+04:00', 'quantity': 20, 'cart': 13}], 'run_time': 0.10478949546813965}
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/product/models.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/en/product/product-detail/2/', 'run_time': 0.22885513305664062}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/product/product-detail/2/', 'run_time': 0.17873811721801758}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/card/', 'request_body': {}, 'response_body': [{'id': 51, 'product': {'title': 'Product #2', 'price': '60.00', 'discount_price': '45.43', 'category': 1, 'brand': 1, 'description': '1234567890-', 'total_quantity': 1, 'main_product': {'id': 2, 'created_at': '2021-11-03T14:53:58.308673+04:00', 'updated_at': '2021-11-08T00:03:22.535817+04:00', 'color': 1, 'size': 1, 'quantity': 1, 'version_description': '', 'is_main': True, 'product': 2}, 'main_image': '/media/images/image/book_slide3.jpg', 'versions': [], 'product_tag': [1]}, 'created_at': '2021-11-09T19:26:48.497018+04:00', 'updated_at': '2021-11-09T19:52:58.707477+04:00', 'quantity': 11, 'cart': 13}, {'id': 52, 'product': {'title': 'Product #1', 'price': '50.00', 'discount_price': '35.37', 'category': 1, 'brand': 1, 'description': 'wertyhjksdfghjk', 'total_quantity': 82, 'main_product': {'id': 1, 'created_at': '2021-11-03T14:42:33.534927+04:00', 'updated_at': '2021-11-08T00:02:55.971112+04:00', 'color': 2, 'size': 2, 'quantity': 82, 'version_description': '', 'is_main': True, 'product': 1}, 'main_image': '/media/images/image/book_slide1.jpg', 'versions': [], 'product_tag': [1]}, 'created_at': '2021-11-09T19:33:56.168989+04:00', 'updated_at': '2021-11-09T19:52:58.709247+04:00', 'quantity': 20, 'cart': 13}], 'run_time': 0.14557123184204102}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/admin/product/review/', 'run_time': 0.16486573219299316}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/admin/jsi18n/', 'run_time': 0.015445232391357422}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/product/product-detail/2/', 'run_time': 0.12615036964416504}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/product/product-detail/2/', 'run_time': 0.1878969669342041}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/card/', 'request_body': {}, 'response_body': [{'id': 51, 'product': {'title': 'Product #2', 'price': '60.00', 'discount_price': '45.43', 'category': 1, 'brand': 1, 'description': '1234567890-', 'total_quantity': 1, 'main_product': {'id': 2, 'created_at': '2021-11-03T14:53:58.308673+04:00', 'updated_at': '2021-11-08T00:03:22.535817+04:00', 'color': 1, 'size': 1, 'quantity': 1, 'version_description': '', 'is_main': True, 'product': 2}, 'main_image': '/media/images/image/book_slide3.jpg', 'versions': [], 'product_tag': [1]}, 'created_at': '2021-11-09T19:26:48.497018+04:00', 'updated_at': '2021-11-09T19:52:58.707477+04:00', 'quantity': 11, 'cart': 13}, {'id': 52, 'product': {'title': 'Product #1', 'price': '50.00', 'discount_price': '35.37', 'category': 1, 'brand': 1, 'description': 'wertyhjksdfghjk', 'total_quantity': 82, 'main_product': {'id': 1, 'created_at': '2021-11-03T14:42:33.534927+04:00', 'updated_at': '2021-11-08T00:02:55.971112+04:00', 'color': 2, 'size': 2, 'quantity': 82, 'version_description': '', 'is_main': True, 'product': 1}, 'main_image': '/media/images/image/book_slide1.jpg', 'versions': [], 'product_tag': [1]}, 'created_at': '2021-11-09T19:33:56.168989+04:00', 'updated_at': '2021-11-09T19:52:58.709247+04:00', 'quantity': 20, 'cart': 13}], 'run_time': 0.1131136417388916}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/user/logout/', 'run_time': 0.019375324249267578}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/user/login/', 'run_time': 0.041437625885009766}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/card/', 'request_body': {}, 'response_body': [{'id': 51, 'product': {'title': 'Product #2', 'price': '60.00', 'discount_price': '45.43', 'category': 1, 'brand': 1, 'description': '1234567890-', 'total_quantity': 1, 'main_product': {'id': 2, 'created_at': '2021-11-03T14:53:58.308673+04:00', 'updated_at': '2021-11-08T00:03:22.535817+04:00', 'color': 1, 'size': 1, 'quantity': 1, 'version_description': '', 'is_main': True, 'product': 2}, 'main_image': '/media/images/image/book_slide3.jpg', 'versions': [], 'product_tag': [1]}, 'created_at': '2021-11-09T19:26:48.497018+04:00', 'updated_at': '2021-11-09T19:52:58.707477+04:00', 'quantity': 11, 'cart': 13}, {'id': 52, 'product': {'title': 'Product #1', 'price': '50.00', 'discount_price': '35.37', 'category': 1, 'brand': 1, 'description': 'wertyhjksdfghjk', 'total_quantity': 82, 'main_product': {'id': 1, 'created_at': '2021-11-03T14:42:33.534927+04:00', 'updated_at': '2021-11-08T00:02:55.971112+04:00', 'color': 2, 'size': 2, 'quantity': 82, 'version_description': '', 'is_main': True, 'product': 1}, 'main_image': '/media/images/image/book_slide1.jpg', 'versions': [], 'product_tag': [1]}, 'created_at': '2021-11-09T19:33:56.168989+04:00', 'updated_at': '2021-11-09T19:52:58.709247+04:00', 'quantity': 20, 'cart': 13}], 'run_time': 0.09382891654968262}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/en/api/token/', 'request_body': b'{"email":"admin@admin.com","password":"admin"}', 'run_time': 0.021311044692993164}
+WARNING:django.request:Not Found: /en/api/token/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/en/user/login/', 'run_time': 0.3290834426879883}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/user/register/', 'run_time': 0.05221152305603027}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/card/', 'request_body': {}, 'response_body': [{'id': 51, 'product': {'title': 'Product #2', 'price': '60.00', 'discount_price': '45.43', 'category': 1, 'brand': 1, 'description': '1234567890-', 'total_quantity': 1, 'main_product': {'id': 2, 'created_at': '2021-11-03T14:53:58.308673+04:00', 'updated_at': '2021-11-08T00:03:22.535817+04:00', 'color': 1, 'size': 1, 'quantity': 1, 'version_description': '', 'is_main': True, 'product': 2}, 'main_image': '/media/images/image/book_slide3.jpg', 'versions': [], 'product_tag': [1]}, 'created_at': '2021-11-09T19:26:48.497018+04:00', 'updated_at': '2021-11-09T19:52:58.707477+04:00', 'quantity': 11, 'cart': 13}, {'id': 52, 'product': {'title': 'Product #1', 'price': '50.00', 'discount_price': '35.37', 'category': 1, 'brand': 1, 'description': 'wertyhjksdfghjk', 'total_quantity': 82, 'main_product': {'id': 1, 'created_at': '2021-11-03T14:42:33.534927+04:00', 'updated_at': '2021-11-08T00:02:55.971112+04:00', 'color': 2, 'size': 2, 'quantity': 82, 'version_description': '', 'is_main': True, 'product': 1}, 'main_image': '/media/images/image/book_slide1.jpg', 'versions': [], 'product_tag': [1]}, 'created_at': '2021-11-09T19:33:56.168989+04:00', 'updated_at': '2021-11-09T19:52:58.709247+04:00', 'quantity': 20, 'cart': 13}], 'run_time': 0.11755514144897461}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/product/product-list/', 'run_time': 0.10476016998291016}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/card/', 'request_body': {}, 'response_body': [{'id': 51, 'product': {'title': 'Product #2', 'price': '60.00', 'discount_price': '45.43', 'category': 1, 'brand': 1, 'description': '1234567890-', 'total_quantity': 1, 'main_product': {'id': 2, 'created_at': '2021-11-03T14:53:58.308673+04:00', 'updated_at': '2021-11-08T00:03:22.535817+04:00', 'color': 1, 'size': 1, 'quantity': 1, 'version_description': '', 'is_main': True, 'product': 2}, 'main_image': '/media/images/image/book_slide3.jpg', 'versions': [], 'product_tag': [1]}, 'created_at': '2021-11-09T19:26:48.497018+04:00', 'updated_at': '2021-11-09T19:52:58.707477+04:00', 'quantity': 11, 'cart': 13}, {'id': 52, 'product': {'title': 'Product #1', 'price': '50.00', 'discount_price': '35.37', 'category': 1, 'brand': 1, 'description': 'wertyhjksdfghjk', 'total_quantity': 82, 'main_product': {'id': 1, 'created_at': '2021-11-03T14:42:33.534927+04:00', 'updated_at': '2021-11-08T00:02:55.971112+04:00', 'color': 2, 'size': 2, 'quantity': 82, 'version_description': '', 'is_main': True, 'product': 1}, 'main_image': '/media/images/image/book_slide1.jpg', 'versions': [], 'product_tag': [1]}, 'created_at': '2021-11-09T19:33:56.168989+04:00', 'updated_at': '2021-11-09T19:52:58.709247+04:00', 'quantity': 20, 'cart': 13}], 'run_time': 0.09037041664123535}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/card/', 'request_body': {}, 'response_body': [{'id': 51, 'product': {'title': 'Product #2', 'price': '60.00', 'discount_price': '45.43', 'category': 1, 'brand': 1, 'description': '1234567890-', 'total_quantity': 1, 'main_product': {'id': 2, 'created_at': '2021-11-03T14:53:58.308673+04:00', 'updated_at': '2021-11-08T00:03:22.535817+04:00', 'color': 1, 'size': 1, 'quantity': 1, 'version_description': '', 'is_main': True, 'product': 2}, 'main_image': '/media/images/image/book_slide3.jpg', 'versions': [], 'product_tag': [1]}, 'created_at': '2021-11-09T19:26:48.497018+04:00', 'updated_at': '2021-11-09T19:52:58.707477+04:00', 'quantity': 11, 'cart': 13}, {'id': 52, 'product': {'title': 'Product #1', 'price': '50.00', 'discount_price': '35.37', 'category': 1, 'brand': 1, 'description': 'wertyhjksdfghjk', 'total_quantity': 82, 'main_product': {'id': 1, 'created_at': '2021-11-03T14:42:33.534927+04:00', 'updated_at': '2021-11-08T00:02:55.971112+04:00', 'color': 2, 'size': 2, 'quantity': 82, 'version_description': '', 'is_main': True, 'product': 1}, 'main_image': '/media/images/image/book_slide1.jpg', 'versions': [], 'product_tag': [1]}, 'created_at': '2021-11-09T19:33:56.168989+04:00', 'updated_at': '2021-11-09T19:52:58.709247+04:00', 'quantity': 20, 'cart': 13}], 'run_time': 0.0783696174621582}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/admin/user/user/', 'run_time': 0.08792710304260254}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/admin/jsi18n/', 'run_time': 0.014757871627807617}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/admin/user/user/1/change/', 'run_time': 0.38776230812072754}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/admin/jsi18n/', 'run_time': 0.016297101974487305}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/product/product-detail/2/', 'run_time': 0.180647611618042}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/product/product-detail/2/', 'run_time': 0.19799137115478516}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/card/', 'request_body': {}, 'response_body': [{'id': 51, 'product': {'title': 'Product #2', 'price': '60.00', 'discount_price': '45.43', 'category': 1, 'brand': 1, 'description': '1234567890-', 'total_quantity': 1, 'main_product': {'id': 2, 'created_at': '2021-11-03T14:53:58.308673+04:00', 'updated_at': '2021-11-08T00:03:22.535817+04:00', 'color': 1, 'size': 1, 'quantity': 1, 'version_description': '', 'is_main': True, 'product': 2}, 'main_image': '/media/images/image/book_slide3.jpg', 'versions': [], 'product_tag': [1]}, 'created_at': '2021-11-09T19:26:48.497018+04:00', 'updated_at': '2021-11-09T19:52:58.707477+04:00', 'quantity': 11, 'cart': 13}, {'id': 52, 'product': {'title': 'Product #1', 'price': '50.00', 'discount_price': '35.37', 'category': 1, 'brand': 1, 'description': 'wertyhjksdfghjk', 'total_quantity': 82, 'main_product': {'id': 1, 'created_at': '2021-11-03T14:42:33.534927+04:00', 'updated_at': '2021-11-08T00:02:55.971112+04:00', 'color': 2, 'size': 2, 'quantity': 82, 'version_description': '', 'is_main': True, 'product': 1}, 'main_image': '/media/images/image/book_slide1.jpg', 'versions': [], 'product_tag': [1]}, 'created_at': '2021-11-09T19:33:56.168989+04:00', 'updated_at': '2021-11-09T19:52:58.709247+04:00', 'quantity': 20, 'cart': 13}], 'run_time': 0.08003926277160645}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/en/product/product-detail/2/', 'run_time': 0.1293950080871582}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/product/product-detail/2/', 'run_time': 0.16342997550964355}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/card/', 'request_body': {}, 'response_body': [{'id': 51, 'product': {'title': 'Product #2', 'price': '60.00', 'discount_price': '45.43', 'category': 1, 'brand': 1, 'description': '1234567890-', 'total_quantity': 1, 'main_product': {'id': 2, 'created_at': '2021-11-03T14:53:58.308673+04:00', 'updated_at': '2021-11-08T00:03:22.535817+04:00', 'color': 1, 'size': 1, 'quantity': 1, 'version_description': '', 'is_main': True, 'product': 2}, 'main_image': '/media/images/image/book_slide3.jpg', 'versions': [], 'product_tag': [1]}, 'created_at': '2021-11-09T19:26:48.497018+04:00', 'updated_at': '2021-11-09T19:52:58.707477+04:00', 'quantity': 11, 'cart': 13}, {'id': 52, 'product': {'title': 'Product #1', 'price': '50.00', 'discount_price': '35.37', 'category': 1, 'brand': 1, 'description': 'wertyhjksdfghjk', 'total_quantity': 82, 'main_product': {'id': 1, 'created_at': '2021-11-03T14:42:33.534927+04:00', 'updated_at': '2021-11-08T00:02:55.971112+04:00', 'color': 2, 'size': 2, 'quantity': 82, 'version_description': '', 'is_main': True, 'product': 1}, 'main_image': '/media/images/image/book_slide1.jpg', 'versions': [], 'product_tag': [1]}, 'created_at': '2021-11-09T19:33:56.168989+04:00', 'updated_at': '2021-11-09T19:52:58.709247+04:00', 'quantity': 20, 'cart': 13}], 'run_time': 0.09736418724060059}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/admin/product/review/', 'run_time': 0.11606192588806152}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/admin/jsi18n/', 'run_time': 0.01619100570678711}
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/admin/product/review/', 'run_time': 0.21807575225830078}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/admin/jsi18n/', 'run_time': 0.02350592613220215}
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/admin/product/review/', 'run_time': 0.22948360443115234}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/admin/jsi18n/', 'run_time': 0.024373292922973633}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/en/product/product-detail/2/', 'run_time': 0.12440085411071777}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide3.jpg', 'run_time': 0.0029566287994384766}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/product/product-detail/2/', 'run_time': 0.18651366233825684}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/favicon.ico', 'run_time': 0.011022329330444336}
+WARNING:django.request:Not Found: /favicon.ico
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/card/', 'request_body': {}, 'response_body': [{'id': 51, 'product': {'title': 'Product #2', 'price': '60.00', 'discount_price': '45.43', 'category': 1, 'brand': 1, 'description': '1234567890-', 'total_quantity': 1, 'main_product': {'id': 2, 'created_at': '2021-11-03T14:53:58.308673+04:00', 'updated_at': '2021-11-08T00:03:22.535817+04:00', 'color': 1, 'size': 1, 'quantity': 1, 'version_description': '', 'is_main': True, 'product': 2}, 'main_image': '/media/images/image/book_slide3.jpg', 'versions': [], 'product_tag': [1]}, 'created_at': '2021-11-09T19:26:48.497018+04:00', 'updated_at': '2021-11-09T19:52:58.707477+04:00', 'quantity': 11, 'cart': 13}, {'id': 52, 'product': {'title': 'Product #1', 'price': '50.00', 'discount_price': '35.37', 'category': 1, 'brand': 1, 'description': 'wertyhjksdfghjk', 'total_quantity': 82, 'main_product': {'id': 1, 'created_at': '2021-11-03T14:42:33.534927+04:00', 'updated_at': '2021-11-08T00:02:55.971112+04:00', 'color': 2, 'size': 2, 'quantity': 82, 'version_description': '', 'is_main': True, 'product': 1}, 'main_image': '/media/images/image/book_slide1.jpg', 'versions': [], 'product_tag': [1]}, 'created_at': '2021-11-09T19:33:56.168989+04:00', 'updated_at': '2021-11-09T19:52:58.709247+04:00', 'quantity': 20, 'cart': 13}], 'run_time': 0.1930077075958252}
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/views.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/serializers.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/serializers.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/serializers.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/views.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/views.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/views.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/views.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/views.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/views.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/views.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/views.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/views.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/urls.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/urls.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/product/product-detail/2/', 'run_time': 1.356334924697876}
+ERROR:django.request:Internal Server Error: /media/images/image/book_slide1.jpg
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/SuperB/middleware.py", line 46, in __call__
+    if response and response["content-type"] == "application/json":
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/http/response.py", line 178, in __getitem__
+    return self.headers[header]
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/datastructures.py", line 316, in __getitem__
+    return self._store[key.lower()][1]
+KeyError: 'content-type'
+ERROR:django.request:Internal Server Error: /media/images/image/book_slide3.jpg
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/SuperB/middleware.py", line 46, in __call__
+    if response and response["content-type"] == "application/json":
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/http/response.py", line 178, in __getitem__
+    return self.headers[header]
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/datastructures.py", line 316, in __getitem__
+    return self._store[key.lower()][1]
+KeyError: 'content-type'
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/product/product-detail/2/', 'run_time': 0.11639261245727539}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/card/', 'request_body': {}, 'response_body': [{'id': 51, 'product': {'title': 'Product #2', 'price': '60.00', 'discount_price': '45.43', 'category': 1, 'brand': 1, 'description': '1234567890-', 'total_quantity': 1, 'main_product': {'id': 2, 'created_at': '2021-11-03T14:53:58.308673+04:00', 'updated_at': '2021-11-08T00:03:22.535817+04:00', 'color': 1, 'size': 1, 'quantity': 1, 'version_description': '', 'is_main': True, 'product': 2}, 'main_image': '/media/images/image/book_slide3.jpg', 'versions': [], 'product_tag': [1]}, 'created_at': '2021-11-09T19:26:48.497018+04:00', 'updated_at': '2021-11-09T19:52:58.707477+04:00', 'quantity': 11, 'cart': 13}, {'id': 52, 'product': {'title': 'Product #1', 'price': '50.00', 'discount_price': '35.37', 'category': 1, 'brand': 1, 'description': 'wertyhjksdfghjk', 'total_quantity': 82, 'main_product': {'id': 1, 'created_at': '2021-11-03T14:42:33.534927+04:00', 'updated_at': '2021-11-08T00:02:55.971112+04:00', 'color': 2, 'size': 2, 'quantity': 82, 'version_description': '', 'is_main': True, 'product': 1}, 'main_image': '/media/images/image/book_slide1.jpg', 'versions': [], 'product_tag': [1]}, 'created_at': '2021-11-09T19:33:56.168989+04:00', 'updated_at': '2021-11-09T19:52:58.709247+04:00', 'quantity': 20, 'cart': 13}], 'run_time': 0.3775603771209717}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide1.jpg', 'run_time': 0.0009348392486572266}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide3.jpg', 'run_time': 0.0028650760650634766}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/product/product-detail/2/', 'run_time': 0.12271451950073242}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide3.jpg', 'run_time': 0.0010128021240234375}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide1.jpg', 'run_time': 0.004129171371459961}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/product/product-detail/2/', 'run_time': 0.11740541458129883}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/favicon.ico', 'run_time': 0.015691518783569336}
+WARNING:django.request:Not Found: /favicon.ico
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/card/', 'request_body': {}, 'response_body': [{'id': 51, 'product': {'title': 'Product #2', 'price': '60.00', 'discount_price': '45.43', 'category': 1, 'brand': 1, 'description': '1234567890-', 'total_quantity': 1, 'main_product': {'id': 2, 'created_at': '2021-11-03T14:53:58.308673+04:00', 'updated_at': '2021-11-08T00:03:22.535817+04:00', 'color': 1, 'size': 1, 'quantity': 1, 'version_description': '', 'is_main': True, 'product': 2}, 'main_image': '/media/images/image/book_slide3.jpg', 'versions': [], 'product_tag': [1]}, 'created_at': '2021-11-09T19:26:48.497018+04:00', 'updated_at': '2021-11-09T19:52:58.707477+04:00', 'quantity': 11, 'cart': 13}, {'id': 52, 'product': {'title': 'Product #1', 'price': '50.00', 'discount_price': '35.37', 'category': 1, 'brand': 1, 'description': 'wertyhjksdfghjk', 'total_quantity': 82, 'main_product': {'id': 1, 'created_at': '2021-11-03T14:42:33.534927+04:00', 'updated_at': '2021-11-08T00:02:55.971112+04:00', 'color': 2, 'size': 2, 'quantity': 82, 'version_description': '', 'is_main': True, 'product': 1}, 'main_image': '/media/images/image/book_slide1.jpg', 'versions': [], 'product_tag': [1]}, 'created_at': '2021-11-09T19:33:56.168989+04:00', 'updated_at': '2021-11-09T19:52:58.709247+04:00', 'quantity': 20, 'cart': 13}], 'run_time': 0.10081100463867188}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/product/product-detail/2/', 'run_time': 0.06505703926086426}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/en/product/product-detail/2/', 'run_time': 0.15578389167785645}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/card/', 'request_body': {}, 'response_body': [{'id': 51, 'product': {'title': 'Product #2', 'price': '60.00', 'discount_price': '45.43', 'category': 1, 'brand': 1, 'description': '1234567890-', 'total_quantity': 1, 'main_product': {'id': 2, 'created_at': '2021-11-03T14:53:58.308673+04:00', 'updated_at': '2021-11-08T00:03:22.535817+04:00', 'color': 1, 'size': 1, 'quantity': 1, 'version_description': '', 'is_main': True, 'product': 2}, 'main_image': '/media/images/image/book_slide3.jpg', 'versions': [], 'product_tag': [1]}, 'created_at': '2021-11-09T19:26:48.497018+04:00', 'updated_at': '2021-11-09T19:52:58.707477+04:00', 'quantity': 11, 'cart': 13}, {'id': 52, 'product': {'title': 'Product #1', 'price': '50.00', 'discount_price': '35.37', 'category': 1, 'brand': 1, 'description': 'wertyhjksdfghjk', 'total_quantity': 82, 'main_product': {'id': 1, 'created_at': '2021-11-03T14:42:33.534927+04:00', 'updated_at': '2021-11-08T00:02:55.971112+04:00', 'color': 2, 'size': 2, 'quantity': 82, 'version_description': '', 'is_main': True, 'product': 1}, 'main_image': '/media/images/image/book_slide1.jpg', 'versions': [], 'product_tag': [1]}, 'created_at': '2021-11-09T19:33:56.168989+04:00', 'updated_at': '2021-11-09T19:52:58.709247+04:00', 'quantity': 20, 'cart': 13}], 'run_time': 0.08622622489929199}
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/urls.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector

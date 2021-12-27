@@ -1,0 +1,561 @@
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.13117337226867676}
+ERROR:django.request:Internal Server Error: /media/images/image/book_slide3_H0EsSvo.jpg
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/SuperB/middleware.py", line 46, in __call__
+    if response and response["content-type"] == "application/json":
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/http/response.py", line 178, in __getitem__
+    return self.headers[header]
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/datastructures.py", line 316, in __getitem__
+    return self._store[key.lower()][1]
+KeyError: 'content-type'
+ERROR:django.request:Internal Server Error: /media/images/image/book_slide1_ckR4iZf.jpg
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/SuperB/middleware.py", line 46, in __call__
+    if response and response["content-type"] == "application/json":
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/http/response.py", line 178, in __getitem__
+    return self.headers[header]
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/datastructures.py", line 316, in __getitem__
+    return self._store[key.lower()][1]
+KeyError: 'content-type'
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/product/models.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/order/models.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/order/models.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/order/models.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/order/models.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/order/models.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/order/models.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/order/models.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/order/models.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/order/admin.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/order/admin.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/order/models.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/order/models.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/order/models.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/order/models.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/order/models.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.12616848945617676}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide1_ckR4iZf.jpg', 'run_time': 0.003556489944458008}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide3_H0EsSvo.jpg', 'run_time': 0.0012555122375488281}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-detail/1/', 'run_time': 0.1456916332244873}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-detail/1/', 'run_time': 0.16300296783447266}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.08345794677734375}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/order/shopping-cart/', 'run_time': 0.044440507888793945}
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/order/views.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/order/views.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/urls.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/urls.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.14118313789367676}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide3_H0EsSvo.jpg', 'run_time': 0.03671741485595703}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide1_ckR4iZf.jpg', 'run_time': 0.007273197174072266}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.07645082473754883}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":null}', 'response_body': {'detail': 'CSRF Failed: CSRF token missing or incorrect.'}, 'run_time': 0.019498825073242188}
+WARNING:django.request:Forbidden: /api/card/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/logout/', 'run_time': 0.021562814712524414}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/login/', 'run_time': 0.03561592102050781}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/user/login/', 'run_time': 0.32097768783569336}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/register/', 'run_time': 0.05088472366333008}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.08852577209472656}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":null}', 'response_body': {'detail': 'CSRF Failed: CSRF token missing or incorrect.'}, 'run_time': 0.027910470962524414}
+WARNING:django.request:Forbidden: /api/card/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":null}', 'response_body': {'detail': 'CSRF Failed: CSRF token missing or incorrect.'}, 'run_time': 0.01955270767211914}
+WARNING:django.request:Forbidden: /api/card/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.0746760368347168}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.07653188705444336}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide1_ckR4iZf.jpg', 'run_time': 0.0016777515411376953}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide3_H0EsSvo.jpg', 'run_time': 0.0011553764343261719}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/favicon.ico', 'run_time': 0.011957168579101562}
+WARNING:django.request:Not Found: /favicon.ico
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.07190680503845215}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/logout/', 'run_time': 0.021901607513427734}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/login/', 'run_time': 0.024742603302001953}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/login/', 'run_time': 0.029427766799926758}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/login/', 'run_time': 0.05545186996459961}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/user/login/', 'run_time': 0.31938910484313965}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/register/', 'run_time': 0.05376458168029785}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.12101197242736816}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":null}', 'response_body': {'detail': 'CSRF Failed: CSRF token missing or incorrect.'}, 'run_time': 0.021162033081054688}
+WARNING:django.request:Forbidden: /api/card/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":null}', 'response_body': {'detail': 'CSRF Failed: CSRF token missing or incorrect.'}, 'run_time': 0.030094623565673828}
+WARNING:django.request:Forbidden: /api/card/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.06493878364562988}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/logout/', 'run_time': 0.024906158447265625}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/login/', 'run_time': 0.03120112419128418}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/login/', 'run_time': 0.030658483505249023}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/user/login/', 'run_time': 0.3312382698059082}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/register/', 'run_time': 0.05641984939575195}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/register/', 'run_time': 0.043374061584472656}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.08398079872131348}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.07321691513061523}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":null}', 'response_body': {'detail': 'CSRF Failed: CSRF token missing or incorrect.'}, 'run_time': 0.0260469913482666}
+WARNING:django.request:Forbidden: /api/card/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":null}', 'response_body': {'detail': 'CSRF Failed: CSRF token missing or incorrect.'}, 'run_time': 0.02381587028503418}
+WARNING:django.request:Forbidden: /api/card/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/logout/', 'run_time': 0.047338247299194336}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/login/', 'run_time': 0.03683614730834961}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/login/', 'run_time': 0.030208110809326172}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/user/login/', 'run_time': 0.3275573253631592}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/register/', 'run_time': 0.05623054504394531}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.08567667007446289}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":null}', 'response_body': {'detail': 'CSRF Failed: CSRF token missing or incorrect.'}, 'run_time': 0.028298616409301758}
+WARNING:django.request:Forbidden: /api/card/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":null}', 'response_body': {'detail': 'CSRF Failed: CSRF token missing or incorrect.'}, 'run_time': 0.016904354095458984}
+WARNING:django.request:Forbidden: /api/card/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.07216119766235352}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.07785224914550781}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide1_ckR4iZf.jpg', 'run_time': 0.007953882217407227}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide3_H0EsSvo.jpg', 'run_time': 0.009069681167602539}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/favicon.ico', 'run_time': 0.012664079666137695}
+WARNING:django.request:Not Found: /favicon.ico
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/logout/', 'run_time': 0.026518583297729492}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/login/', 'run_time': 0.0280611515045166}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/register/', 'run_time': 0.03785252571105957}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/user/register/', 'run_time': 0.36951637268066406}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/login/', 'run_time': 0.03204607963562012}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/user/login/', 'run_time': 0.04459357261657715}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/register/', 'run_time': 0.03576231002807617}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/', 'run_time': 0.06120753288269043}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/login/?next=/admin/', 'run_time': 0.029039859771728516}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/admin/login/?next=/admin/', 'run_time': 0.3157505989074707}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/', 'run_time': 0.07304000854492188}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/user/user/', 'run_time': 0.16153359413146973}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/jsi18n/', 'run_time': 0.029216766357421875}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/user/user/2/change/', 'run_time': 0.3836650848388672}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/jsi18n/', 'run_time': 0.02128767967224121}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/login/', 'run_time': 0.05438995361328125}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/user/login/', 'run_time': 0.3312113285064697}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/register/', 'run_time': 0.04449105262756348}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.09609866142272949}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":null}', 'response_body': {'detail': 'CSRF Failed: CSRF token missing or incorrect.'}, 'run_time': 0.026442766189575195}
+WARNING:django.request:Forbidden: /api/card/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/user/user/', 'run_time': 0.02433037757873535}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/login/?next=/admin/user/user/', 'run_time': 0.052335500717163086}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/logout/', 'run_time': 0.03423190116882324}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/login/', 'run_time': 0.027483463287353516}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/user/login/', 'run_time': 0.03723859786987305}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/user/login/', 'run_time': 0.34331274032592773}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/token/', 'request_body': b'{"email":"rial@mail.ru","password":"123456"}', 'response_body': {'refresh': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTYzNTM0NTkzNSwiaWF0IjoxNjM1MjU5NTM1LCJqdGkiOiI5ZGMwN2RlMGU0NmM0ODM1YmRjNDEwYmM2MzU2OWU2MyIsInVzZXJfaWQiOjJ9.brUi1l7osY5hCIT4xXqcoFnGjroxXN54OVOOdAqhWGw', 'access': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjM1MjU5ODM1LCJpYXQiOjE2MzUyNTk1MzUsImp0aSI6IjVhMWI5NWM0YmM4MzRlM2E5MTA4ZTY2YjI2N2RiNmFiIiwidXNlcl9pZCI6Mn0.m4t_IINvmx2uGfX-lFWnBh_-F9o8-qxbEowb3UsK1EE'}, 'run_time': 0.39092230796813965}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/register/', 'run_time': 0.05973935127258301}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.08579015731811523}
+WARNING:django.security.csrf:Forbidden (CSRF token missing or incorrect.): /admin/login/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/admin/login/?next=/admin/user/user/', 'run_time': 0.008790254592895508}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/login/?next=/admin/user/user/', 'run_time': 0.04873466491699219}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/admin/login/?next=/admin/user/user/', 'run_time': 0.346083402633667}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/user/user/', 'run_time': 0.08659124374389648}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/jsi18n/', 'run_time': 0.020250320434570312}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.09669113159179688}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/logout/', 'run_time': 0.02034759521484375}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/login/', 'run_time': 0.03506588935852051}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/token/', 'request_body': b'{"email":"rial@mail.ru","password":"123456"}', 'response_body': {'refresh': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTYzNTM0NjI0MSwiaWF0IjoxNjM1MjU5ODQxLCJqdGkiOiJmODIyMGEyM2RlM2Y0NGEwYjBhOTM3YTk0ZmEwNmVjNCIsInVzZXJfaWQiOjJ9.Qd5ewAYPOCPS8_GiISXtSAUTeP4qdJpzr5cM4Jpc0ys', 'access': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjM1MjYwMTQxLCJpYXQiOjE2MzUyNTk4NDEsImp0aSI6ImM5YmJkOGZjYmM5MzQ5MTc5OTZmODkyZTkwZjE1YjlhIiwidXNlcl9pZCI6Mn0.YJaySWH10_sDvx_R0HxhO3qIHNs1Se_kDcHzVKzTbw0'}, 'run_time': 0.3408193588256836}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/user/login/', 'run_time': 0.3438541889190674}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/register/', 'run_time': 0.05605292320251465}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/user/user/', 'run_time': 0.01618051528930664}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/login/?next=/admin/user/user/', 'run_time': 0.05153322219848633}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/admin/login/?next=/admin/user/user/', 'run_time': 0.35602498054504395}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/admin/login/?next=/admin/user/user/', 'run_time': 0.3496580123901367}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/admin/login/?next=/admin/user/user/', 'run_time': 0.35216403007507324}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/admin/login/?next=/admin/user/user/', 'run_time': 0.3727085590362549}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/user/user/', 'run_time': 0.09120583534240723}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/jsi18n/', 'run_time': 0.02129840850830078}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/logout/', 'run_time': 0.04204988479614258}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/', 'run_time': 0.0028526782989501953}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/login/?next=/admin/', 'run_time': 0.02443242073059082}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/admin/login/?next=/admin/', 'run_time': 0.3311781883239746}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/admin/login/?next=/admin/', 'run_time': 0.3590366840362549}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/admin/login/?next=/admin/', 'run_time': 0.3411827087402344}
+ERROR:django.request:Internal Server Error: /user/logout/
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 309, in check_response
+    raise ValueError(
+ValueError: The view user.views.logout_user didn't return an HttpResponse object. It returned None instead.
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/logout/', 'run_time': 0.057437896728515625}
+ERROR:django.request:Internal Server Error: /user/logout/
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 309, in check_response
+    raise ValueError(
+ValueError: The view user.views.logout_user didn't return an HttpResponse object. It returned None instead.
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/logout/', 'run_time': 0.051609039306640625}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/admin/login/?next=/admin/', 'run_time': 0.33538269996643066}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/', 'run_time': 0.07343411445617676}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/logout/', 'run_time': 0.021768569946289062}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/login/', 'run_time': 0.035143136978149414}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/token/', 'request_body': b'{"email":"rial@mail.ru","password":"123456"}', 'response_body': {'refresh': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTYzNTM0NjM1OCwiaWF0IjoxNjM1MjU5OTU4LCJqdGkiOiI3YjZjMTMxOWVlMzQ0ZTU1YmMxM2RhYTkwZjkwZDdiOSIsInVzZXJfaWQiOjJ9.WDcF_DzUy0-llxQrgz2OzakLyDLxvxY0BlBg4qSCMmk', 'access': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjM1MjYwMjU4LCJpYXQiOjE2MzUyNTk5NTgsImp0aSI6ImRkNmUxZmJkMWRlZjRjMGM4MzZmMzYyMjYyOTIzYWI3IiwidXNlcl9pZCI6Mn0.m--qda1IFdulGElRsqdTgfYBsG_t6iuNgNO2gqn1An4'}, 'run_time': 0.39042067527770996}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/user/login/', 'run_time': 0.4086904525756836}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/register/', 'run_time': 0.059827327728271484}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/', 'run_time': 0.017765283584594727}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/login/?next=/admin/', 'run_time': 0.0604095458984375}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/admin/login/?next=/admin/', 'run_time': 0.3824329376220703}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/admin/login/?next=/admin/', 'run_time': 0.3781468868255615}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/', 'run_time': 0.10857152938842773}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/user/user/', 'run_time': 0.13065528869628906}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/jsi18n/', 'run_time': 0.027833938598632812}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/user/user/2/change/', 'run_time': 0.6360757350921631}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/jsi18n/', 'run_time': 0.02752399444580078}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/admin/user/user/2/change/', 'run_time': 0.08930468559265137}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/user/user/', 'run_time': 0.12306690216064453}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/jsi18n/', 'run_time': 0.025304794311523438}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/logout/', 'run_time': 0.05598163604736328}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/', 'run_time': 0.0013728141784667969}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/login/?next=/admin/', 'run_time': 0.0345005989074707}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/admin/login/?next=/admin/', 'run_time': 0.36902570724487305}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/admin/login/?next=/admin/', 'run_time': 0.371370792388916}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/admin/login/?next=/admin/', 'run_time': 0.39328861236572266}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/admin/login/?next=/admin/', 'run_time': 0.36982178688049316}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/', 'run_time': 0.08906722068786621}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/user/user/', 'run_time': 0.13439607620239258}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/jsi18n/', 'run_time': 0.024883031845092773}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/register/', 'run_time': 0.07663631439208984}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.13230228424072266}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/user/', 'request_body': {}, 'run_time': 0.8824706077575684}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/api-auth/logout/?next=/api/user/', 'request_body': {}, 'run_time': 0.030282020568847656}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/user/', 'request_body': {}, 'run_time': 0.023336410522460938}
+WARNING:django.request:Forbidden: /api/user/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/user/login/', 'request_body': {}, 'run_time': 0.040169477462768555}
+WARNING:django.request:Forbidden: /api/user/login/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/token/', 'request_body': {}, 'run_time': 0.07229447364807129}
+WARNING:django.request:Method Not Allowed: /api/token/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/token/', 'request_body': b'------WebKitFormBoundaryHaZ28ko3JEYJwszj\r\nContent-Disposition: form-data; name="csrfmiddlewaretoken"\r\n\r\nt2N4XVsdijyJLG1aXsmHHj5HYR1KXpZLromjDeRvvvoQfkubAPShjm6oSK8nSth7\r\n------WebKitFormBoundaryHaZ28ko3JEYJwszj\r\nContent-Disposition: form-data; name="email"\r\n\r\nrial@mail.ru\r\n------WebKitFormBoundaryHaZ28ko3JEYJwszj\r\nContent-Disposition: form-data; name="password"\r\n\r\n123456\r\n------WebKitFormBoundaryHaZ28ko3JEYJwszj--\r\n', 'run_time': 0.4092130661010742}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/user/user/2/change/', 'run_time': 0.0029022693634033203}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/login/?next=/admin/user/user/2/change/', 'run_time': 0.03776192665100098}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/admin/login/?next=/admin/user/user/2/change/', 'run_time': 0.36259007453918457}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/user/user/2/change/', 'run_time': 0.6136205196380615}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/jsi18n/', 'run_time': 0.02658534049987793}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/logout/', 'run_time': 0.03375434875488281}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/login/', 'run_time': 0.03518557548522949}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/token/', 'request_body': b'{"email":"rial@mail.ru","password":"123456"}', 'response_body': {'refresh': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTYzNTM0NjY2NCwiaWF0IjoxNjM1MjYwMjY0LCJqdGkiOiIyYmM5ZjUxZmE0OGE0NmU1ODQ2MzJhMWE1ZWE1NmE4MCIsInVzZXJfaWQiOjJ9.vw19rYQMkyVlDGvMSlFH11RaUmmO5dRfUWJOQk54Mh8', 'access': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjM1MjYwNTY0LCJpYXQiOjE2MzUyNjAyNjQsImp0aSI6IjMzNjY3MTVlOWQ2MTRjMGRiMDYxMzI0MTFhMTQ2ZDMyIiwidXNlcl9pZCI6Mn0.TzxYfWno4999iRlw3K1FfnSryO8Fm4I08nt8VCpTJmY'}, 'run_time': 0.35877323150634766}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/user/login/', 'run_time': 0.3962225914001465}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/register/', 'run_time': 0.0763235092163086}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.12112236022949219}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.10373139381408691}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.1258220672607422}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.1083221435546875}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.12553644180297852}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.11136031150817871}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":null}', 'response_body': {'detail': 'CSRF Failed: CSRF token missing or incorrect.'}, 'run_time': 0.016384363174438477}
+WARNING:django.request:Forbidden: /api/card/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/user/user/2/change/', 'run_time': 0.02462315559387207}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/login/?next=/admin/user/user/2/change/', 'run_time': 0.05620145797729492}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/logout/', 'run_time': 0.032716989517211914}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/login/', 'run_time': 0.0368800163269043}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/user/login/', 'run_time': 0.37241220474243164}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/register/', 'run_time': 0.06904983520507812}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.13163065910339355}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":null}', 'response_body': {'detail': 'CSRF Failed: CSRF token missing or incorrect.'}, 'run_time': 0.017358064651489258}
+WARNING:django.request:Forbidden: /api/card/
+WARNING:django.security.csrf:Forbidden (CSRF token missing or incorrect.): /admin/login/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/admin/login/?next=/admin/user/user/2/change/', 'run_time': 0.004938840866088867}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/login/?next=/admin/user/user/2/change/', 'run_time': 0.06038045883178711}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/admin/login/?next=/admin/user/user/2/change/', 'run_time': 0.37548255920410156}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/user/user/2/change/', 'run_time': 0.6160008907318115}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/jsi18n/', 'run_time': 0.029130220413208008}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.10951995849609375}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.10798072814941406}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide1_ckR4iZf.jpg', 'run_time': 0.0012896060943603516}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide3_H0EsSvo.jpg', 'run_time': 0.013986349105834961}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/favicon.ico', 'run_time': 0.010539531707763672}
+WARNING:django.request:Not Found: /favicon.ico
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.09751725196838379}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":null}', 'response_body': {'detail': 'CSRF Failed: CSRF token missing or incorrect.'}, 'run_time': 0.018004894256591797}
+WARNING:django.request:Forbidden: /api/card/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":null}', 'response_body': {'detail': 'CSRF Failed: CSRF token missing or incorrect.'}, 'run_time': 0.01822495460510254}
+WARNING:django.request:Forbidden: /api/card/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":null}', 'response_body': {'detail': 'CSRF Failed: CSRF token missing or incorrect.'}, 'run_time': 0.013084888458251953}
+WARNING:django.request:Forbidden: /api/card/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.07448625564575195}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.07444095611572266}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide1_ckR4iZf.jpg', 'run_time': 0.010736942291259766}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide3_H0EsSvo.jpg', 'run_time': 0.007954597473144531}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/favicon.ico', 'run_time': 0.012373208999633789}
+WARNING:django.request:Not Found: /favicon.ico
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"1"}', 'response_body': {'detail': 'CSRF Failed: CSRF token missing or incorrect.'}, 'run_time': 0.014674663543701172}
+WARNING:django.request:Forbidden: /api/card/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"1"}', 'response_body': {'detail': 'CSRF Failed: CSRF token missing or incorrect.'}, 'run_time': 0.021502256393432617}
+WARNING:django.request:Forbidden: /api/card/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"2"}', 'response_body': {'detail': 'CSRF Failed: CSRF token missing or incorrect.'}, 'run_time': 0.017014741897583008}
+WARNING:django.request:Forbidden: /api/card/
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/views.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.14643549919128418}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"1"}', 'response_body': {'detail': 'CSRF Failed: CSRF token missing or incorrect.'}, 'run_time': 0.02100348472595215}
+WARNING:django.request:Forbidden: /api/card/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"2"}', 'response_body': {'detail': 'CSRF Failed: CSRF token missing or incorrect.'}, 'run_time': 0.01489710807800293}
+WARNING:django.request:Forbidden: /api/card/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.0824730396270752}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.07844710350036621}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide1_ckR4iZf.jpg', 'run_time': 0.01780080795288086}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide3_H0EsSvo.jpg', 'run_time': 0.01993083953857422}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/favicon.ico', 'run_time': 0.012901782989501953}
+WARNING:django.request:Not Found: /favicon.ico
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/logout/', 'run_time': 0.027889251708984375}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/login/', 'run_time': 0.03969860076904297}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/token/', 'request_body': b'{"email":"rial@mail.ru","password":"123456"}', 'response_body': {'refresh': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTYzNTM0ODE0MCwiaWF0IjoxNjM1MjYxNzQwLCJqdGkiOiI4ZTVlMzgxNjc1Mzc0OTI3OTc4ZTc3NGM3ZGRjOTBkNSIsInVzZXJfaWQiOjJ9.I4T5w-1XZmeMxtKd-KOG_vGbCbIRGwT7XkF-a3WRtsc', 'access': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjM1MjYyMDQwLCJpYXQiOjE2MzUyNjE3NDAsImp0aSI6IjI4ZmY2NzEyODlhNTRiOTliMzU2MGUyMmFlMjU4MTVlIiwidXNlcl9pZCI6Mn0.J2b79wKS0t1g5VqEbXVzmNokzz-vSdse6ge1uknNGIM'}, 'run_time': 0.417755126953125}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/user/login/', 'run_time': 0.4318366050720215}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/register/', 'run_time': 0.08353829383850098}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.12156414985656738}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"1"}', 'response_body': {'detail': 'CSRF Failed: CSRF token missing or incorrect.'}, 'run_time': 0.016952991485595703}
+WARNING:django.request:Forbidden: /api/card/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"2"}', 'response_body': {'detail': 'CSRF Failed: CSRF token missing or incorrect.'}, 'run_time': 0.02061939239501953}
+WARNING:django.request:Forbidden: /api/card/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.10618472099304199}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"1"}', 'response_body': {'detail': 'CSRF Failed: CSRF token missing or incorrect.'}, 'run_time': 0.017171621322631836}
+WARNING:django.request:Forbidden: /api/card/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"2"}', 'response_body': {'detail': 'CSRF Failed: CSRF token missing or incorrect.'}, 'run_time': 0.017768144607543945}
+WARNING:django.request:Forbidden: /api/card/
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/urls.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/urls.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/urls.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.1797809600830078}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.11259841918945312}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"1"}', 'response_body': {'detail': 'CSRF Failed: CSRF token missing or incorrect.'}, 'run_time': 0.027352094650268555}
+WARNING:django.request:Forbidden: /api/card/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"2"}', 'response_body': {'detail': 'CSRF Failed: CSRF token missing or incorrect.'}, 'run_time': 0.026389598846435547}
+WARNING:django.request:Forbidden: /api/card/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/order/shoppingcart/', 'run_time': 0.08599233627319336}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/login/?next=/admin/order/shoppingcart/', 'run_time': 0.06865596771240234}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/admin/login/?next=/admin/order/shoppingcart/', 'run_time': 0.38651299476623535}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/order/shoppingcart/', 'run_time': 0.12808537483215332}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/jsi18n/', 'run_time': 0.02607583999633789}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.1071772575378418}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"1"}', 'response_body': {'detail': 'CSRF Failed: CSRF token missing or incorrect.'}, 'run_time': 0.025682449340820312}
+WARNING:django.request:Forbidden: /api/card/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/create-user/', 'request_body': {}, 'run_time': 0.5051801204681396}
+WARNING:django.request:Method Not Allowed: /api/create-user/
+ERROR:SuperB.middleware:Unhandled Exception: User has no user_cart.
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/SuperB/middleware.py", line 58, in process_exception
+    raise exception
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/views.py", line 259, in get
+    serializer = self.serializer_class(request.user.user_cart)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/db/models/fields/related_descriptors.py", line 421, in __get__
+    raise self.RelatedObjectDoesNotExist(
+user.models.User.user_cart.RelatedObjectDoesNotExist: User has no user_cart.
+ERROR:django.request:Internal Server Error: /api/card/
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_response(request, response)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/middleware/clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'RelatedObjectDoesNotExist' object has no attribute 'get'
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/card/', 'request_body': {}, 'run_time': 0.0982050895690918}
+ERROR:SuperB.middleware:Unhandled Exception: User has no user_cart.
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/SuperB/middleware.py", line 58, in process_exception
+    raise exception
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/views.py", line 259, in get
+    serializer = self.serializer_class(request.user.user_cart)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/db/models/fields/related_descriptors.py", line 421, in __get__
+    raise self.RelatedObjectDoesNotExist(
+user.models.User.user_cart.RelatedObjectDoesNotExist: User has no user_cart.
+ERROR:django.request:Internal Server Error: /api/card/
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_response(request, response)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/middleware/clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'RelatedObjectDoesNotExist' object has no attribute 'get'
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/card/', 'request_body': {}, 'run_time': 0.07508540153503418}
+ERROR:SuperB.middleware:Unhandled Exception: User has no user_cart.
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/SuperB/middleware.py", line 58, in process_exception
+    raise exception
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/views.py", line 259, in get
+    serializer = self.serializer_class(request.user.user_cart)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/db/models/fields/related_descriptors.py", line 421, in __get__
+    raise self.RelatedObjectDoesNotExist(
+user.models.User.user_cart.RelatedObjectDoesNotExist: User has no user_cart.
+ERROR:django.request:Internal Server Error: /api/card/
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_response(request, response)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/middleware/clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'RelatedObjectDoesNotExist' object has no attribute 'get'
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/card/', 'request_body': {}, 'run_time': 0.0712900161743164}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/favicon.ico', 'run_time': 0.007681369781494141}
+WARNING:django.request:Not Found: /favicon.ico
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/django_celery_beat/periodictask/', 'run_time': 0.1605687141418457}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/jsi18n/', 'run_time': 0.019445419311523438}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/django_celery_beat/periodictask/add/', 'run_time': 0.3421778678894043}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/jsi18n/', 'run_time': 0.023277759552001953}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.07757067680358887}
+ERROR:SuperB.middleware:Unhandled Exception: User has no user_cart.
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/SuperB/middleware.py", line 58, in process_exception
+    raise exception
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/views.py", line 259, in get
+    serializer = self.serializer_class(request.user.user_cart)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/db/models/fields/related_descriptors.py", line 421, in __get__
+    raise self.RelatedObjectDoesNotExist(
+user.models.User.user_cart.RelatedObjectDoesNotExist: User has no user_cart.
+ERROR:django.request:Internal Server Error: /api/card/
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_response(request, response)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/middleware/clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'RelatedObjectDoesNotExist' object has no attribute 'get'
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/card/', 'request_body': {}, 'run_time': 0.06888723373413086}
+ERROR:SuperB.middleware:Unhandled Exception: User has no user_cart.
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/SuperB/middleware.py", line 58, in process_exception
+    raise exception
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/views.py", line 259, in get
+    serializer = self.serializer_class(request.user.user_cart)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/db/models/fields/related_descriptors.py", line 421, in __get__
+    raise self.RelatedObjectDoesNotExist(
+user.models.User.user_cart.RelatedObjectDoesNotExist: User has no user_cart.
+ERROR:django.request:Internal Server Error: /api/card/
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_response(request, response)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/middleware/clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'RelatedObjectDoesNotExist' object has no attribute 'get'
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/card/', 'request_body': {}, 'run_time': 0.1418297290802002}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/favicon.ico', 'run_time': 0.008250236511230469}
+WARNING:django.request:Not Found: /favicon.ico
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.07053303718566895}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.05769085884094238}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.07512760162353516}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide1_ckR4iZf.jpg', 'run_time': 0.0046045780181884766}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide3_H0EsSvo.jpg', 'run_time': 0.017840862274169922}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/favicon.ico', 'run_time': 0.006780147552490234}
+WARNING:django.request:Not Found: /favicon.ico
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.07896876335144043}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide1_ckR4iZf.jpg', 'run_time': 0.019715070724487305}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide3_H0EsSvo.jpg', 'run_time': 0.0021452903747558594}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/favicon.ico', 'run_time': 0.005056858062744141}
+WARNING:django.request:Not Found: /favicon.ico
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/core/homepage/', 'run_time': 0.03408217430114746}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.04939627647399902}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"1"}', 'response_body': {'detail': 'CSRF Failed: CSRF token missing or incorrect.'}, 'run_time': 0.027075529098510742}
+WARNING:django.request:Forbidden: /api/card/
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/order/views.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector

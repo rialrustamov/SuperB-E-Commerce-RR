@@ -1,0 +1,78 @@
+﻿{% extends 'base.html' %}
+{% load static i18n %}
+
+{% block title %}Wishlist{% endblock %}
+
+{% block base %}
+
+<div id="page"> 
+
+  
+  
+  <!-- Main Container -->
+  <section class="main-container col2-right-layout">
+    <div class="main container">
+      <div class="row">
+        <div class="col-main col-sm-9">
+          <div class="my-account">
+            <div class="page-title">
+              <h1>My Wishlist</h1>
+            </div>
+            <div class="my-wishlist">
+              <form method="post" action="#" id="wishlist-view-form">
+                <fieldset>
+                  <input type="hidden" value="ROBdJO5tIbODPZHZ" name="">
+                  <div class="table-responsive">
+                    <table id="wishlist-table" class="clean-table linearize-table data-table">
+                      <thead>
+                        <tr class="first last">
+                          <th class="customer-wishlist-item-image"></th>
+                          <th class="customer-wishlist-item-info"></th>
+                          <th class="customer-wishlist-item-price">Price</th>
+                          <th class="customer-wishlist-item-cart">Action</th>
+                          <th class="customer-wishlist-item-remove"></th>
+                        </tr>
+                      </thead>
+                      <tbody id="my-wishlist">
+                        
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="buttons-set buttons-set2">
+                    <button class="button btn-add" title="Add All to Cart" type="button"><span>Add All to Cart</span></button>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+            <div class="buttons-set">
+              <p onclick="goBack()" style="cursor: pointer;" class="back_link"><a><small>« </small>Back</a></p>
+            </div>
+          </div>
+        </div>
+        <aside class="col-right sidebar col-sm-3">
+          <div class="block block-account">
+            <div class="block-title">My Account</div>
+            <div class="block-content">
+              <ul>
+                <li><a href="{% url 'account_info' %}"><span>Edit Account</span></a></li>
+                <li><a href="{% url 'contact_info' %}">Contact Information</a></li>
+                <li><a href="{% url 'product_list' %}"><span> Products</span></a></li>
+                <li class="current"><a><span> My Wishlist</span></a></li>
+                <li class="last"><a href="{% url 'checkout' %}"><span>Checkout</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Main Container End --> 
+  
+<br>
+  
+
+</div>
+</body>
+</html>
+{% endblock %}

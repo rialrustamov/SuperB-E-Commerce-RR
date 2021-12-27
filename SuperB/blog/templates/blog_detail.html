@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <!--[if IE]>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Favicons Icon -->
+
+
+  <!-- Mobile Specific -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  {% extends 'base.html' %}
+  {% load static %}
+  {% block title %}{{title}}{% endblock %}
+
+  {% block base %}
+
+  <div id="page">
+
+
+    <!-- Main Container -->
+    <section class="main-container col2-right-layout bounceInUp animated">
+      <div class="main container">
+        <div class="row">
+          <div class="col-main col-sm-9">
+
+            <div class="blog-wrapper latest-blog" id="main">
+              <div class="site-content" id="primary">
+                <div role="main" id="content">
+                 
+                  <div class="blog_post">
+                    <div class="thumbnail">
+                      <h2> <a href="">{{blog.title}}</a> </h2>
+                      <div class="featured-img">
+                        <span class="gradient-overlay"></span>
+                        <img src="{{blog.main_photo.image.url}}" alt="blog post">
+
+                      </div>
+
+                    </div>
+                    <div class="entry-meta">
+                      <a href="#">
+                        <span class="author-avatar byline"><img alt="" src="{{blog.author_photo.image.url}}"
+                            class="avatar avatar-96 photo">By {{blog.author}}</span> <span class="timestamp">{{blog.created_at}}</span>
+                      </a>
+                    </div>
+                    <div class="entry-content">{{blog.main_desc|safe}}</div>
+
+
+                  </div>
+                  <div class="comment-content wow bounceInUp animated">
+                    <div class="comments-wrapper">
+                      <h3> Comments </h3>
+                      <ul class="commentlist">
+                        {% for comment in comments %}
+                        <li class="comment">
+                          <div class="comment-wrapper">
+                            <div class="comment-author vcard">
+
+                              <p class="gravatar"><a href="#"><img width="60" height="60" alt="avatar123"
+                                    src="{% static 'images/comment.jpg' %}"></a></p>
+                              <span class="author">{{comment.author}}</span>
+                            </div>
+                            <!--comment-author vcard-->
+                            <div class="comment-meta">
+                              <time datetime="2014-07-10T07:26:28+00:00" class="entry-date">{{comment.created_at}}</time>
+                              .
+                            </div>
+                            <!--comment-meta-->
+                            <div class="comment-body">{{comment.message}}</div>
+                          </div>
+                        </li>
+                        {% endfor %}
+                        <!--comment-->
+
+
+                      </ul>
+                      <!--commentlist-->
+                    </div>
+                    <!--comments-wrapper-->
+                    {% if request.user.is_authenticated %}
+                    <div class="comments-form-wrapper clearfix">
+                      <h3>Leave A reply</h3>
+                      <form class="comment-form" method="post" id="postComment">
+                        {% csrf_token %}
+                        <div style="display: none;" class="field">
+                          <label>Name<em class="required">*</em></label>
+                          {{form.author}}
+                        </div>
+                        <div style="display: none;" class="field">
+                          <label>Email<em class="required">*</em></label>
+                          <input type="text" class="input-text" title="Email" id="email" name="user_email">
+                        </div>
+                        <div class="clear"></div>
+                        <div class="field aw-blog-comment-area">
+                          <label for="comment">Comment<em class="required">*</em></label>
+                          {{form.message}}
+                        </div>
+                        <div style="width:96%" class="button-set">
+                          <input type="hidden" value="1" name="blog_id">
+                          <button type="submit" class="bnt-comment"><span><span>Add Comment</span></span></button>
+                        </div>
+                      </form>
+                    </div>
+                    <!--comments-form-wrapper clearfix-->
+                  </div>
+                    {% else %}
+                    <div class="comments-form-wrapper clearfix">
+                      <h3>Leave A reply</h3>
+                      <form class="comment-form" method="post" id="postComment">
+                        {% csrf_token %}
+                        <div class="field">
+                          <label>Name<em class="required">*</em></label>
+                          {{form.author}}
+                        </div>
+                        <div class="field">
+                          <label>Email<em class="required">*</em></label>
+                          <input type="text" class="input-text" title="Email" id="email" name="user_email">
+                        </div>
+                        <div class="clear"></div>
+                        <div class="field aw-blog-comment-area">
+                          <label for="comment">Comment<em class="required">*</em></label>
+                          {{form.message}}
+                        </div>
+                        <div style="width:96%" class="button-set">
+                          <input type="hidden" value="1" name="blog_id">
+                          <button type="submit" class="bnt-comment"><span><span>Add Comment</span></span></button>
+                        </div>
+                      </form>
+                    </div>
+                    <!--comments-form-wrapper clearfix-->
+                  </div>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+            <br>
+          </div>
+          <aside class="col-right sidebar col-sm-3">
+            <div role="complementary" class="widget_wrapper13" id="secondary">
+              <div class="popular-posts widget widget__sidebar" id="recent-posts-4">
+                <h3 class="widget-title">Most Popular Post</h3>
+                <div class="widget-content">
+                  <ul class="posts-list unstyled clearfix">
+                    {% for most_blog in most_popular %}
+                    <li>
+                      <figure class="featured-thumb"> <a href="#"> <img width="80" height="53" alt="blog image"
+                            src="{{most_blog.main_photo.image.url}}"> </a> </figure>
+                      <!--featured-thumb-->
+                      <h4><a title="Pellentesque posuere" href="#">{{most_blog.title}}</a></h4>
+                      <p class="post-meta"><i class="icon-calendar"></i>
+                        <time datetime="2014-07-10T07:09:31+00:00" class="entry-date">{{most_blog.created_at}}</time>
+                        .
+                      </p>
+                    </li>
+                    {% endfor %}
+
+                  </ul>
+                </div>
+                <!--widget-content-->
+
+              </div>
+              <div class="popular-posts widget widget_categories" id="categories-2">
+                <h3 class="widget-title">Categories</h3>
+                <ul>
+                  {% for category in categories %}
+                  <li class="cat-item"><a href="#">{{category.title}}</a></li>
+                  {% endfor %}
+                </ul>
+              </div>
+              <!-- Banner Ad Block -->
+              <!-- <div class="ad-spots widget"> <a target="_self" href="#" title=""><img alt="offer banner"
+                    src="{% static 'images/bloc3.jpg' %}"></a></br>
+                <a target="_self" href="#" title=""><img alt="offer banner" src="{% static 'images/block2.jpg' %}"></a>
+              </div> -->
+              <!-- Banner Text Block -->
+              <!-- <div class="text-widget widget widget__sidebar">
+                <h3 class="widget-title">Text Widget</h3>
+                <div class="widget-content">Mauris at blandit erat. Nam vel tortor non quam scelerisque cursus. Praesent
+                  nunc vitae magna pellentesque auctor. Quisque id lectus.<br>
+                  <br>
+                  Massa, eget eleifend tellus. Proin nec ante leo ssim nunc sit amet velit malesuada pharetra. Nulla
+                  neque sapien, sollicitudin non ornare quis, malesuada.
+                </div>
+              </div> -->
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+    <!-- Main Container End -->
+
+
+
+  </body>
+
+</html>
+
+{% endblock %}

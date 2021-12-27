@@ -1,0 +1,109 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-19 07:51+0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: SuperB/settings.py:164 core/templates/base.html:95
+msgid "English"
+msgstr "İngiliscə"
+
+#: SuperB/settings.py:165
+msgid "Azərbaycan dili"
+msgstr ""
+
+#: core/templates/base.html:98
+msgid "Azerbaijani"
+msgstr "Azərbaycanca"
+
+#: core/templates/base.html:119
+msgid "Welcome SuperB!"
+msgstr "SuperB saytına Xoş Gəlmişsiniz !"
+
+#: core/templates/base.html:127
+msgid "My Cart"
+msgstr "Mənim Səbətim"
+
+#: core/templates/base.html:133 core/templates/base.html:196
+msgid "Checkout"
+msgstr "Ödəniş"
+
+#: core/templates/base.html:134
+msgid "View Cart"
+msgstr "Səbətimə keç"
+
+#: core/templates/base.html:192
+msgid "My Account"
+msgstr "Mənim Hesabım"
+
+#: core/templates/base.html:194
+msgid "Wishlist"
+msgstr "Arzu Olunanlar"
+
+#: core/templates/base.html:209
+msgid "Change Password"
+msgstr "Şifrəni dəyişdirin"
+
+#: core/templates/base.html:213
+msgid "Logout"
+msgstr "Çıxış"
+
+#: core/templates/base.html:218
+msgid "Log In"
+msgstr "Daxil Olun"
+
+#: core/templates/base.html:244
+msgid "Home"
+msgstr "Ana Səhifə"
+
+#: core/templates/base.html:247
+msgid "Products"
+msgstr "Məhsullar"
+
+#: core/templates/base.html:250
+msgid "Blogs"
+msgstr "Bloglar"
+
+#: core/templates/base.html:256
+msgid "About Us"
+msgstr "Haqqımızda"
+
+#: core/templates/base.html:258
+msgid "FAQ"
+msgstr "Suallar"
+
+#: core/templates/base.html:261
+msgid "Contact"
+msgstr "Əlaqə"
+
+#~ msgid "Pages"
+#~ msgstr "Səhifələr"
+
+#~ msgid "Women"
+#~ msgstr "Qadın"
+
+#~ msgid "Men"
+#~ msgstr "Kişi"
+
+#~ msgid "Electronics"
+#~ msgstr "Elektronika"
+
+#~ msgid "Furniture"
+#~ msgstr "Ev əşyaları"
+
+#~ msgid "Kids"
+#~ msgstr "Uşaqlar"

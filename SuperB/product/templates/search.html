@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title  %}{{title}}{% endblock %}
+{% block base %}
+
+<h1 style="text-align: center;">Search Results</h1>
+<h3 style="text-align: center;">You have searched for <span style="color: red;">{{word}}</span></h3>
+{% if products|length == 0 %}
+<h3 style="text-align: center; font-style: italic;"> <span style="color: red;">OOPS ! </span> <br> Product not found</h3>
+{% endif %}
+{% for product in products %}
+<div class="container">
+<div class="category-products">
+    <ol class="products-list" id="products-list">
+      <li class="item
+      {% if forloop.first %}
+      first
+      {% elif forloop.last %}
+      {% if forloop.counter|divisibleby:'2' %}
+      last even
+      {% else %}
+      last odd
+      {% endif %}
+      {% elif forloop.counter|divisibleby:'2' %}
+      even 
+      {% else %}
+      odd
+      {% endif %}">
+        <div class="product-image"><a href="{% url 'product_detail' product.id %}" title={{product.title}}>
+            <img class="small-image" src='{% if product.main_photo %}
+              {{product.main_photo.image.url}}{% endif %}' alt={{product.title}}>
+          </a> </div>
+        <div class="product-shop">
+          <h2 class="product-name"><a href="{% url 'product_detail' product.id %}"
+              title="{{product.product.title}}">{{product.product.title}}</a>
+          </h2>
+          <div class="ratings">
+            <div class="rating-box">
+              <div style="width:50%" class="rating"></div>
+            </div>
+            <p class="rating-links"> <a href="#/review/product/list/id/167/category/35/">1 Review(s)</a> <span
+                class="separator">|</span> <a href="#review-form">Add Your Review</a> </p>
+          </div>
+          <div class="desc std">
+            <p>{{product.description|truncatewords:25}} <a class="link-learn" title=""
+                href="{% url 'product_detail' product.id %}">Learn More</a>
+            </p>
+          </div>
+          <div class="price-box">
+
+            <p class="special-price"> <span class="price-label"></span> <span class="price">
+                ${{product.product.discount_price}} </span>
+            </p>
+            <p class="old-price"> <span class="price-label"></span> <span class="price"> ${{product.product.price}}
+              </span> </p>
+          </div>
+          <!-- Add to basket Field -->
+          <div class="actions">
+            <button id="add_basket" data="{{product.id}}" class="button btn-cart ajx-cart" title="Add to Cart"
+              ><span>Add to Cart</span></button>
+            <span class="add-to-links pro-add-wishlist" style="cursor: pointer;" data="{{product.id}}"> <a title="Add to Wishlist" class="button link-wishlist"
+              ><span>Add to Wishlist</span></a> </span>
+          </div>
+          <!--  -->
+        </div>
+      </li>
+    </ol>
+  </div>
+</div>
+{% endfor %}
+
+{% endblock %}

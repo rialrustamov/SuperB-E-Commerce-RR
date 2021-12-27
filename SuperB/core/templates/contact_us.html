@@ -1,0 +1,125 @@
+﻿{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{{title}}{% endblock %}
+
+{% block base %}
+
+<div id="page">
+
+
+  <!-- Main Container -->
+  <section class="main-container col2-right-layout">
+    <div class="main container">
+      <div class="row">
+        <section class="col-main col-sm-9">
+          <div class="page-title">
+            <h1>Contact Us</h1>
+          </div>  
+                  {% if form.errors  %}
+                <div class="alert alert-danger">
+                  <ul>
+                    {% for error in form.errors %}
+                    <li>{{form.errors}}</li>
+                    {% endfor %}
+                  </ul>
+                </div>
+                {% endif %}
+          <form method="POST">
+            {% csrf_token %}
+            <div class="static-contain">
+              <fieldset class="group-select">
+                <ul>
+                  <li id="billing-new-address-form">
+                    <fieldset>
+                      <legend>New Address</legend>
+                      <input type="hidden" id="billing:address_id">
+                      <ul>
+                        <li>
+                          <div class="customer-name">
+                            <div class="input-box name-firstname">
+                              <label for="billing:firstname"> First Name<span class="required">*</span></label>
+                              <br>
+                              <div class="form-group">
+                                {{form.first_name}}
+                                {{form.first_name.errors}}
+                              </div>
+                            </div>
+                            <div class="input-box name-lastname">
+                              <label for="billing:lastname"> Email Address <span class="required">*</span> </label>
+                              <br>
+                              {{form.email}}
+                              {{form.email.errors}}
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="input-box">
+                            <label for="billing:company">Company</label>
+                            <br>
+                            {{form.company}}
+                            {{form.company.errors}}
+                          </div>
+                          <div class="input-box">
+                            <label for="billing:email">Telephone <span class="required">*</span></label>
+                            <br>
+                            {{form.telephone}}
+                            {{form.telephone.errors}}
+                          </div>
+                        </li>
+                        <li>
+                          <label for="billing:street1">Address <span class="required">*</span></label>
+                          <br>
+                          {{form.address_one}}
+                          {{form.address_one.errors}}
+                        </li>
+                        <li>
+                          {{form.address_two}}
+                          {{form.address_two.errors}}
+                        </li>
+                        <li class="">
+                          <label for="comment">Comment<em class="required">*</em></label>
+                          <br>
+                          <div style="float:none" class="">
+                            {{form.comment}}
+                            {{form.comment.errors}}
+                          </div>
+                        </li>
+                      </ul>
+                    </fieldset>
+                  </li>
+                  <span class="require"><em class="required">* </em>Required Fields</span>
+                  <div class="buttons-set">
+                    <button type="submit" title="Submit" class="button submit"> <span> Submit </span> </button>
+                  </div>
+                </ul>
+              </fieldset>
+            </div>
+          </form>
+        </section>
+        <aside class="col-right sidebar col-sm-3">
+          <div class="block block-company">
+            <div class="block-title">Company </div>
+            <div class="block-content">
+              <ol id="recently-viewed-items">
+                <li class="item odd"><a href="#">About Us</a></li>
+                <li class="item even"><a href="#">Sitemap</a></li>
+                <li class="item  odd"><a href="#">Terms of Service</a></li>
+                <li class="item even"><a href="#">Search Terms</a></li>
+                <li class="item last"><strong>Contact Us</strong></li>
+              </ol>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+  <!-- Main Container End -->
+
+
+
+  </body>
+
+  </html>
+
+  {% endblock %}

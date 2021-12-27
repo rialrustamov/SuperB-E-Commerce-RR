@@ -1,0 +1,447 @@
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/order/shopping-cart/', 'run_time': 0.10278677940368652}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/favicon.ico', 'run_time': 0.00944662094116211}
+WARNING:django.request:Not Found: /favicon.ico
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.09071230888366699}
+ERROR:django.request:Internal Server Error: /media/images/image/book_slide3_H0EsSvo.jpg
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/SuperB/middleware.py", line 46, in __call__
+    if response and response["content-type"] == "application/json":
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/http/response.py", line 178, in __getitem__
+    return self.headers[header]
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/datastructures.py", line 316, in __getitem__
+    return self._store[key.lower()][1]
+KeyError: 'content-type'
+ERROR:django.request:Internal Server Error: /media/images/image/book_slide1_ckR4iZf.jpg
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/SuperB/middleware.py", line 46, in __call__
+    if response and response["content-type"] == "application/json":
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/http/response.py", line 178, in __getitem__
+    return self.headers[header]
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/datastructures.py", line 316, in __getitem__
+    return self._store[key.lower()][1]
+KeyError: 'content-type'
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.07589840888977051}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide1_ckR4iZf.jpg', 'run_time': 0.00707554817199707}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide3_H0EsSvo.jpg', 'run_time': 0.008492708206176758}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/favicon.ico', 'run_time': 0.010332822799682617}
+WARNING:django.request:Not Found: /favicon.ico
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"1"}', 'response_body': {'detail': 'Given token not valid for any token type', 'code': 'token_not_valid', 'messages': [{'token_class': 'AccessToken', 'token_type': 'access', 'message': 'Token is invalid or expired'}]}, 'run_time': 0.04615640640258789}
+WARNING:django.request:Unauthorized: /api/card/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/logout/', 'run_time': 0.022735595703125}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/login/', 'run_time': 0.03004169464111328}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/token/', 'request_body': b'{"email":"rial@mail.ru","password":"123456"}', 'response_body': {'refresh': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTYzNTQ4NjI2NSwiaWF0IjoxNjM1Mzk5ODY1LCJqdGkiOiJiODVjYmI2ZDMwNjg0MzdhYjRmMWEwNDFhM2I5ZDk3NSIsInVzZXJfaWQiOjJ9.RI_GNc57Zl9jbTcvk2ve4mIb0QYShPo3JzPngumsG8U', 'access': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjM1NDAwMTY1LCJpYXQiOjE2MzUzOTk4NjUsImp0aSI6IjEyNzdhMDI4NWI1MDRlNGViN2RkYmU5NTc3MzkyYWM4IiwidXNlcl9pZCI6Mn0.Scuq6wTuBQJqUfXrlSX_tJabry1iLcOI4OHl_cK9F5w'}, 'run_time': 0.3272583484649658}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/user/login/', 'run_time': 0.34165263175964355}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/register/', 'run_time': 0.04646492004394531}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.08526444435119629}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"1"}', 'response_body': {'success': True, 'message': 'Product added to your card.'}, 'run_time': 0.03676462173461914}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.07920265197753906}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide1_ckR4iZf.jpg', 'run_time': 0.008898735046386719}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide3_H0EsSvo.jpg', 'run_time': 0.010301589965820312}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/favicon.ico', 'run_time': 0.014399051666259766}
+WARNING:django.request:Not Found: /favicon.ico
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/order/shoppingcart/2/change/', 'run_time': 0.07812309265136719}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/order/shoppingcart/2/change/', 'run_time': 0.02015089988708496}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/login/?next=/admin/order/shoppingcart/2/change/', 'run_time': 0.053678035736083984}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/admin/login/?next=/admin/order/shoppingcart/2/change/', 'run_time': 0.3676595687866211}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/order/shoppingcart/2/change/', 'run_time': 0.11405253410339355}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/jsi18n/', 'run_time': 0.02150726318359375}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/order/shoppingcart/', 'run_time': 0.21734023094177246}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/jsi18n/', 'run_time': 0.017612218856811523}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/order/shoppingcart/2/change/', 'run_time': 0.13005971908569336}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/jsi18n/', 'run_time': 0.016726016998291016}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"2"}', 'response_body': {'success': True, 'message': 'Product added to your card.'}, 'run_time': 0.07686543464660645}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/order/shoppingcart/2/change/', 'run_time': 0.10035943984985352}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/jsi18n/', 'run_time': 0.015507936477661133}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/admin/order/shoppingcart/2/change/', 'run_time': 0.07096385955810547}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/order/shoppingcart/', 'run_time': 0.10871434211730957}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/jsi18n/', 'run_time': 0.014952659606933594}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/order/shoppingcart/2/change/', 'run_time': 0.09580087661743164}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/jsi18n/', 'run_time': 0.018388748168945312}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"2"}', 'response_body': {'success': True, 'message': 'Product added to your card.'}, 'run_time': 0.060163021087646484}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/order/shoppingcart/2/change/', 'run_time': 0.08848929405212402}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/jsi18n/', 'run_time': 0.01613306999206543}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/order/shoppingcart/2/change/', 'run_time': 0.10364151000976562}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/jsi18n/', 'run_time': 0.015494585037231445}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/order/shoppingcart/', 'run_time': 0.10223817825317383}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/jsi18n/', 'run_time': 0.018579959869384766}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/logout/', 'run_time': 0.026885032653808594}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/login/', 'run_time': 0.02780461311340332}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/token/', 'request_body': b'{"email":"rial@mail.ru","password":"123456"}', 'response_body': {'refresh': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTYzNTQ5MjQ5NCwiaWF0IjoxNjM1NDA2MDk0LCJqdGkiOiI1ZjAyMjZiZDJhNTE0ZGZmYmFjNWNkYjM4YmQ3NWM4NSIsInVzZXJfaWQiOjJ9.QHX8et3wpwt2d8L3X20BwpZAQjBvHQta_ZL2Jvwppm8', 'access': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjM1NDA2Mzk0LCJpYXQiOjE2MzU0MDYwOTQsImp0aSI6IjQ2NjE3YzA4NmU0MzRmMjBhYmRhZGM4OTNhOTZlMzk0IiwidXNlcl9pZCI6Mn0.sUcrDSckuXL54bg9dBLwQDBqyfCRAWxGm6dt1NTCPvA'}, 'run_time': 0.3724205493927002}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/user/login/', 'run_time': 0.38108181953430176}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/register/', 'run_time': 0.05053424835205078}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.07885098457336426}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"1"}', 'response_body': {'success': True, 'message': 'Product added to your card.'}, 'run_time': 0.027315378189086914}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/card/', 'request_body': {}, 'run_time': 0.02346491813659668}
+WARNING:django.request:Unauthorized: /api/card/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/card/', 'request_body': {}, 'run_time': 0.017312288284301758}
+WARNING:django.request:Unauthorized: /api/card/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/product-id/', 'request_body': {}, 'run_time': 0.015420913696289062}
+WARNING:django.request:Not Found: /api/product-id/
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/urls.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/urls.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/urls.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/urls.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/product-id/', 'request_body': {}, 'run_time': 0.11243677139282227}
+WARNING:django.request:Unauthorized: /api/product-id/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/api-auth/login/?next=/api/product-id/', 'request_body': {}, 'run_time': 0.01730823516845703}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/api-auth/login/', 'request_body': b'csrfmiddlewaretoken=Z8WVY8lilMQdRtoZXZW7CVlcHTwFcYwF7TX4tFtagFNh30C8UPCo5Lxg3s00187e&next=%2Fapi%2Fproduct-id%2F&username=admin%40admin.com&password=admin&submit=Log+in', 'run_time': 0.33237528800964355}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/product-id/', 'request_body': {}, 'run_time': 0.017525911331176758}
+WARNING:django.request:Unauthorized: /api/product-id/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/card/', 'request_body': {}, 'run_time': 0.017282724380493164}
+WARNING:django.request:Unauthorized: /api/card/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/token/', 'request_body': {}, 'run_time': 0.03506112098693848}
+WARNING:django.request:Method Not Allowed: /api/token/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/token/', 'request_body': b'------WebKitFormBoundaryiXBvBcBBxgwOsrAo\r\nContent-Disposition: form-data; name="csrfmiddlewaretoken"\r\n\r\nJX9gINoACzEI5w3HgPt6umHOO9UVDRfxmamtmAHKaKWzcnvt3Tprcs9YVG536sFQ\r\n------WebKitFormBoundaryiXBvBcBBxgwOsrAo\r\nContent-Disposition: form-data; name="email"\r\n\r\nrial@mail.ru\r\n------WebKitFormBoundaryiXBvBcBBxgwOsrAo\r\nContent-Disposition: form-data; name="password"\r\n\r\n123456\r\n------WebKitFormBoundaryiXBvBcBBxgwOsrAo--\r\n', 'run_time': 0.37271761894226074}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/card/', 'request_body': {}, 'run_time': 0.018187522888183594}
+WARNING:django.request:Unauthorized: /api/card/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/product-id/', 'request_body': {}, 'run_time': 0.019900798797607422}
+WARNING:django.request:Unauthorized: /api/product-id/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"1"}', 'response_body': {'success': True, 'message': 'Product added to your card.'}, 'run_time': 0.03875422477722168}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"1"}', 'response_body': {'success': True, 'message': 'Product added to your card.'}, 'run_time': 0.024518728256225586}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.08054375648498535}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide1_ckR4iZf.jpg', 'run_time': 0.011493921279907227}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide3_H0EsSvo.jpg', 'run_time': 0.012801408767700195}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/favicon.ico', 'run_time': 0.010568857192993164}
+WARNING:django.request:Not Found: /favicon.ico
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/logout/', 'run_time': 0.019400358200073242}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/login/', 'run_time': 0.02712392807006836}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/token/', 'request_body': b'{"email":"rial@mail.ru","password":"123456"}', 'response_body': {'refresh': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTYzNTQ5MzcxNywiaWF0IjoxNjM1NDA3MzE3LCJqdGkiOiIxOWQ0MjRhNDEyNWI0ZTAzODcwYTlmMjIxYWQ1YmEwNyIsInVzZXJfaWQiOjJ9.T_PDlWN4pWRQMqWH0Thg_kgEOgAkeelu9LYCtWJwg-Q', 'access': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjM1NDA3NjE3LCJpYXQiOjE2MzU0MDczMTcsImp0aSI6IjhjNGFjY2EyNWY0ZTQyZmVhZTFlZWY4N2VlYWRiYjhhIiwidXNlcl9pZCI6Mn0.-6ckyzsE3iOzgmHW0xbhFbEy1yFqwktL-o765vAqWoU'}, 'run_time': 0.3559253215789795}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/user/login/', 'run_time': 0.3612363338470459}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/register/', 'run_time': 0.055280208587646484}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.07710099220275879}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"1"}', 'response_body': {'success': True, 'message': 'Product added to your card.'}, 'run_time': 0.06613874435424805}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.08070206642150879}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide1_ckR4iZf.jpg', 'run_time': 0.009600400924682617}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide3_H0EsSvo.jpg', 'run_time': 0.018651962280273438}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/favicon.ico', 'run_time': 0.00707554817199707}
+WARNING:django.request:Not Found: /favicon.ico
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"2"}', 'response_body': {'success': True, 'message': 'Product added to your card.'}, 'run_time': 0.06462669372558594}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.08545684814453125}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide1_ckR4iZf.jpg', 'run_time': 0.0015649795532226562}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide3_H0EsSvo.jpg', 'run_time': 0.0016205310821533203}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/favicon.ico', 'run_time': 0.010376214981079102}
+WARNING:django.request:Not Found: /favicon.ico
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"2"}', 'response_body': {'success': True, 'message': 'Product added to your card.'}, 'run_time': 0.03383588790893555}
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/views.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/views.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/views.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.13434839248657227}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide1_ckR4iZf.jpg', 'run_time': 0.0010044574737548828}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide3_H0EsSvo.jpg', 'run_time': 0.0015866756439208984}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/favicon.ico', 'run_time': 0.009115457534790039}
+WARNING:django.request:Not Found: /favicon.ico
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"2"}', 'response_body': {'detail': 'Given token not valid for any token type', 'code': 'token_not_valid', 'messages': [{'token_class': 'AccessToken', 'token_type': 'access', 'message': 'Token is invalid or expired'}]}, 'run_time': 0.031876325607299805}
+WARNING:django.request:Unauthorized: /api/card/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/logout/', 'run_time': 0.023660659790039062}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/login/', 'run_time': 0.030731916427612305}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/token/', 'request_body': b'{"email":"rial@mail.ru","password":"123456"}', 'response_body': {'refresh': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTYzNTQ5NDE4MywiaWF0IjoxNjM1NDA3NzgzLCJqdGkiOiI2OWY5ODAwODQwNjM0ZGNiOTdjN2E4Y2MwNmUwYzk4ZCIsInVzZXJfaWQiOjJ9.O2BcYC-RUj7BrPdbrPbQLe_ywRvsC-OgsFI3LGmxGE8', 'access': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjM1NDA4MDgzLCJpYXQiOjE2MzU0MDc3ODMsImp0aSI6IjY4ZjM0ZDM4M2MzOTQxMDM4ZjhmOTc5MjRlZmY5N2Q1IiwidXNlcl9pZCI6Mn0.gMsC5H9ZVVu8oSZrJc_AFP8qzJyx27CR8D2r_wOdjvk'}, 'run_time': 0.33385491371154785}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/user/login/', 'run_time': 0.3393421173095703}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/register/', 'run_time': 0.04810190200805664}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.07095217704772949}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"1"}', 'response_body': {'success': True, 'message': 'Product added to your card.'}, 'run_time': 0.022417545318603516}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.07354617118835449}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide1_ckR4iZf.jpg', 'run_time': 0.02196025848388672}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide3_H0EsSvo.jpg', 'run_time': 0.018848180770874023}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/favicon.ico', 'run_time': 0.007929325103759766}
+WARNING:django.request:Not Found: /favicon.ico
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.07924532890319824}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide3_H0EsSvo.jpg', 'run_time': 0.004276752471923828}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide1_ckR4iZf.jpg', 'run_time': 0.006861448287963867}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/favicon.ico', 'run_time': 0.011733770370483398}
+WARNING:django.request:Not Found: /favicon.ico
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.08219432830810547}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide1_ckR4iZf.jpg', 'run_time': 0.009852170944213867}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide3_H0EsSvo.jpg', 'run_time': 0.0021479129791259766}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/favicon.ico', 'run_time': 0.006665468215942383}
+WARNING:django.request:Not Found: /favicon.ico
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.0823371410369873}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide1_ckR4iZf.jpg', 'run_time': 0.00813603401184082}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide3_H0EsSvo.jpg', 'run_time': 0.004215717315673828}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/favicon.ico', 'run_time': 0.010157346725463867}
+WARNING:django.request:Not Found: /favicon.ico
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"2"}', 'response_body': {'detail': 'Given token not valid for any token type', 'code': 'token_not_valid', 'messages': [{'token_class': 'AccessToken', 'token_type': 'access', 'message': 'Token is invalid or expired'}]}, 'run_time': 0.0016589164733886719}
+WARNING:django.request:Unauthorized: /api/card/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/logout/', 'run_time': 0.03214621543884277}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/login/', 'run_time': 0.027701139450073242}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/token/', 'request_body': b'{"email":"rial@mail.ru","password":"123456"}', 'response_body': {'refresh': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTYzNTQ5NDY4MywiaWF0IjoxNjM1NDA4MjgzLCJqdGkiOiIzMTcwNGIzOTNlNTk0NjQxODZkNmEyYTgwY2M0N2JkNSIsInVzZXJfaWQiOjJ9.jok10njVtsRKfao_N_dvIgd-fC8RP7F5-DC0Es-l0-E', 'access': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjM1NDA4NTgzLCJpYXQiOjE2MzU0MDgyODMsImp0aSI6ImYzODkxYTlhMzExYjRmN2U4Njc3OGU0ZDRiYTY3OGVjIiwidXNlcl9pZCI6Mn0.eYs52s5xlBKn0SlBBgIVnFp80icXEevv1G6eqCxADus'}, 'run_time': 0.31995129585266113}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/user/login/', 'run_time': 0.3283350467681885}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/register/', 'run_time': 0.04339003562927246}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/register/', 'run_time': 0.05601191520690918}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/favicon.ico', 'run_time': 0.010943889617919922}
+WARNING:django.request:Not Found: /favicon.ico
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/register/', 'run_time': 0.04444146156311035}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/favicon.ico', 'run_time': 0.008379459381103516}
+WARNING:django.request:Not Found: /favicon.ico
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.07367444038391113}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.08081674575805664}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide1_ckR4iZf.jpg', 'run_time': 0.0035486221313476562}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide3_H0EsSvo.jpg', 'run_time': 0.011683940887451172}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/favicon.ico', 'run_time': 0.0061626434326171875}
+WARNING:django.request:Not Found: /favicon.ico
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.07341122627258301}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide1_ckR4iZf.jpg', 'run_time': 0.0010786056518554688}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide3_H0EsSvo.jpg', 'run_time': 0.009176969528198242}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/favicon.ico', 'run_time': 0.009295463562011719}
+WARNING:django.request:Not Found: /favicon.ico
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/product-id/', 'request_body': {}, 'run_time': 0.02506852149963379}
+WARNING:django.request:Unauthorized: /api/product-id/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/product-id/', 'request_body': {}, 'run_time': 0.016210556030273438}
+WARNING:django.request:Unauthorized: /api/product-id/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/product-id/', 'request_body': {}, 'run_time': 0.016930580139160156}
+WARNING:django.request:Unauthorized: /api/product-id/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/product-id/', 'request_body': {}, 'run_time': 0.018442630767822266}
+WARNING:django.request:Unauthorized: /api/product-id/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/product-id/', 'request_body': {}, 'run_time': 0.015436649322509766}
+WARNING:django.request:Unauthorized: /api/product-id/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/product-id/', 'request_body': {}, 'run_time': 0.016095399856567383}
+WARNING:django.request:Unauthorized: /api/product-id/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/product-id/', 'request_body': {}, 'run_time': 0.017835617065429688}
+WARNING:django.request:Unauthorized: /api/product-id/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/product-id/', 'request_body': {}, 'run_time': 0.018347978591918945}
+WARNING:django.request:Unauthorized: /api/product-id/
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/urls.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/urls.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.12626218795776367}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide1_ckR4iZf.jpg', 'run_time': 0.004892826080322266}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide3_H0EsSvo.jpg', 'run_time': 0.021967411041259766}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/favicon.ico', 'run_time': 0.010176420211791992}
+WARNING:django.request:Not Found: /favicon.ico
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"1"}', 'response_body': {'success': True, 'message': 'Product added to your card.'}, 'run_time': 0.07188749313354492}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"2"}', 'response_body': {'success': True, 'message': 'Product added to your card.'}, 'run_time': 0.02467060089111328}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.0757284164428711}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide1_ckR4iZf.jpg', 'run_time': 0.0028755664825439453}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide3_H0EsSvo.jpg', 'run_time': 0.005507230758666992}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/favicon.ico', 'run_time': 0.006491422653198242}
+WARNING:django.request:Not Found: /favicon.ico
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.07393693923950195}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide1_ckR4iZf.jpg', 'run_time': 0.00426793098449707}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide3_H0EsSvo.jpg', 'run_time': 0.004520416259765625}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/favicon.ico', 'run_time': 0.007093667984008789}
+WARNING:django.request:Not Found: /favicon.ico
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.09323263168334961}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide1_ckR4iZf.jpg', 'run_time': 0.0032227039337158203}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide3_H0EsSvo.jpg', 'run_time': 0.001978635787963867}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/favicon.ico', 'run_time': 0.008761882781982422}
+WARNING:django.request:Not Found: /favicon.ico
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"2"}', 'response_body': {'detail': 'Given token not valid for any token type', 'code': 'token_not_valid', 'messages': [{'token_class': 'AccessToken', 'token_type': 'access', 'message': 'Token is invalid or expired'}]}, 'run_time': 0.003937959671020508}
+WARNING:django.request:Unauthorized: /api/card/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/logout/', 'run_time': 0.05503273010253906}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/login/', 'run_time': 0.02513408660888672}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/token/', 'request_body': b'{"email":"rial@mail.ru","password":"123456"}', 'response_body': {'refresh': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTYzNTQ5NTMzNCwiaWF0IjoxNjM1NDA4OTM0LCJqdGkiOiJhY2UyMmRlMzdlYjA0MDEyOWM3MGM1MGVmOGE2OTE0YyIsInVzZXJfaWQiOjJ9.TNXbd6zmvn9xDF1wFZAgUZ52lC8FFKaiicqViynzXWo', 'access': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjM1NDA5MjM0LCJpYXQiOjE2MzU0MDg5MzQsImp0aSI6IjJlOTAzZWNhODhlODRkMDY5MjI4OTAyY2ZkYzk1NTQ3IiwidXNlcl9pZCI6Mn0.OA3GYdHST9EtRRztPotMpRBTc00cGPwCIUMaG-YkirY'}, 'run_time': 0.3282887935638428}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/user/login/', 'run_time': 0.3451547622680664}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/register/', 'run_time': 0.042256832122802734}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.08098292350769043}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"2"}', 'response_body': {'success': True, 'message': 'Product added to your card.'}, 'run_time': 0.036330223083496094}
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/views.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.13216710090637207}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide1_ckR4iZf.jpg', 'run_time': 0.03815054893493652}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide3_H0EsSvo.jpg', 'run_time': 0.008733987808227539}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/favicon.ico', 'run_time': 0.010352611541748047}
+WARNING:django.request:Not Found: /favicon.ico
+ERROR:SuperB.middleware:Unhandled Exception: Object of type Product is not JSON serializable
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/SuperB/middleware.py", line 58, in process_exception
+    raise exception
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    response = response.render()
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/renderers.py", line 100, in render
+    ret = json.dumps(
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/lib/python3.8/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Product is not JSON serializable
+ERROR:django.request:Internal Server Error: /api/card/
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_response(request, response)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/middleware/clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'TypeError' object has no attribute 'get'
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"2"}', 'run_time': 0.1385059356689453}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.08709907531738281}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide1_ckR4iZf.jpg', 'run_time': 0.00782155990600586}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide3_H0EsSvo.jpg', 'run_time': 0.0027701854705810547}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/favicon.ico', 'run_time': 0.0059816837310791016}
+WARNING:django.request:Not Found: /favicon.ico
+ERROR:SuperB.middleware:Unhandled Exception: Object of type Product is not JSON serializable
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/SuperB/middleware.py", line 58, in process_exception
+    raise exception
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    response = response.render()
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/renderers.py", line 100, in render
+    ret = json.dumps(
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/lib/python3.8/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Product is not JSON serializable
+ERROR:django.request:Internal Server Error: /api/card/
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_response(request, response)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/middleware/clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'TypeError' object has no attribute 'get'
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"1"}', 'run_time': 0.08265423774719238}
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/views.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.17764496803283691}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide1_ckR4iZf.jpg', 'run_time': 0.018788814544677734}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide3_H0EsSvo.jpg', 'run_time': 0.003117084503173828}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/favicon.ico', 'run_time': 0.008092164993286133}
+WARNING:django.request:Not Found: /favicon.ico
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"1"}', 'response_body': {'detail': 'Given token not valid for any token type', 'code': 'token_not_valid', 'messages': [{'token_class': 'AccessToken', 'token_type': 'access', 'message': 'Token is invalid or expired'}]}, 'run_time': 0.030260801315307617}
+WARNING:django.request:Unauthorized: /api/card/
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/logout/', 'run_time': 0.02055811882019043}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/login/', 'run_time': 0.02794027328491211}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/token/', 'request_body': b'{"email":"rial@mail.ru","password":"123456"}', 'response_body': {'refresh': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTYzNTQ5NTY5OSwiaWF0IjoxNjM1NDA5Mjk5LCJqdGkiOiI3YjdhYzdlOGEzMjU0ZTcyYjRlNTY4OGEyM2I5YzgxYSIsInVzZXJfaWQiOjJ9.R63mFZhnYFL2WWgESoxtfOnMO_AB9jbHxny4q1jS4es', 'access': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjM1NDA5NTk5LCJpYXQiOjE2MzU0MDkyOTksImp0aSI6IjA4NWI5ZTc5YWExNjQ3NWFhNTU4YjE5OWM5MTRhMGJhIiwidXNlcl9pZCI6Mn0.YksdupeZ9fRHPqPV186HJeRdkJlrPdBUJ4bW0ptHKEc'}, 'run_time': 0.3203141689300537}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/user/login/', 'run_time': 0.338726282119751}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/user/register/', 'run_time': 0.04629015922546387}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.07222342491149902}
+ERROR:SuperB.middleware:Unhandled Exception: Object of type Product is not JSON serializable
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/SuperB/middleware.py", line 58, in process_exception
+    raise exception
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    response = response.render()
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/renderers.py", line 100, in render
+    ret = json.dumps(
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/lib/python3.8/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Product is not JSON serializable
+ERROR:django.request:Internal Server Error: /api/card/
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_response(request, response)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/middleware/clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'TypeError' object has no attribute 'get'
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"1"}', 'run_time': 0.08117365837097168}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.08482813835144043}
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/views.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.14947009086608887}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide1_ckR4iZf.jpg', 'run_time': 0.0024263858795166016}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide3_H0EsSvo.jpg', 'run_time': 0.003391265869140625}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/favicon.ico', 'run_time': 0.008375167846679688}
+WARNING:django.request:Not Found: /favicon.ico
+ERROR:SuperB.middleware:Unhandled Exception: Object of type Product is not JSON serializable
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/SuperB/middleware.py", line 58, in process_exception
+    raise exception
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    response = response.render()
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/renderers.py", line 100, in render
+    ret = json.dumps(
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/lib/python3.8/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Product is not JSON serializable
+ERROR:django.request:Internal Server Error: /api/card/
+Traceback (most recent call last):
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_response(request, response)
+  File "/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/venv/lib/python3.8/site-packages/django/middleware/clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'TypeError' object has no attribute 'get'
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"1"}', 'run_time': 0.10943841934204102}
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/views.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.15217375755310059}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide1_ckR4iZf.jpg', 'run_time': 0.0029234886169433594}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide3_H0EsSvo.jpg', 'run_time': 0.0016741752624511719}
+INFO:django.utils.autoreload:/home/rial/Desktop/SuperB_E-commerce/E-commerce-SuperB-Lambda/SuperB/api/views.py changed, reloading.
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"1"}', 'response_body': {'success': True, 'message': 'Product added to your card.'}, 'run_time': 0.09482288360595703}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.16289710998535156}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide1_ckR4iZf.jpg', 'run_time': 0.009581804275512695}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/media/images/image/book_slide3_H0EsSvo.jpg', 'run_time': 0.03620409965515137}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/favicon.ico', 'run_time': 0.010245561599731445}
+WARNING:django.request:Not Found: /favicon.ico
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'POST', 'request_path': '/api/card/', 'request_body': b'{"product_id":"1"}', 'response_body': {'success': True, 'message': 'Product added to your card.'}, 'run_time': 0.03579592704772949}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.07071042060852051}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.07242131233215332}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.07800602912902832}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.0758209228515625}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.07871055603027344}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.06589436531066895}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/product/product-list/', 'run_time': 0.06859207153320312}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/admin/order/shoppingcart/', 'run_time': 0.09716272354125977}
+INFO:SuperB.middleware:{'remote_address': '127.0.0.1', 'server_hostname': 'rial', 'request_method': 'GET', 'request_path': '/api/product-id/', 'request_body': {}, 'run_time': 0.019916296005249023}
+DEBUG:asyncio:Using selector: EpollSelector
+WARNING:django.request:Unauthorized: /api/product-id/
